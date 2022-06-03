@@ -1,0 +1,52 @@
+.nav_main{
+    height: 78px;
+    width: 80%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25px;
+    
+}
+.left_side{
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    justify-content: center;
+}
+.left_side b{
+    margin-top: 5px;
+}
+
+.logo_img{
+    height: 25px;
+    margin-top: 5px;
+   
+}
+.right_side{
+    display: flex;
+    gap: 15px;
+    /* border: 1px solid red; */
+    padding-bottom: 20px;
+    padding-top: 10px;
+    justify-content: center;
+}
+.right_side b{
+    border-right: 1px solid gray;
+    /* border: 1px solid red; */
+    height: 20px;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+.right_side :nth-child(1){
+    margin-top: 5px;
+}
+.cart_img{
+    height: 50px;
+    margin-bottom: 20px ;
+    /* border: 1px solid gold; */
+    margin-left: 30px;
+}
