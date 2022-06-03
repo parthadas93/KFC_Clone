@@ -1,0 +1,10 @@
+.black{
+    background-color: rgb(32,33,36);
+    height: 60px;
+    color: white;
+    font-size: 18px;   
+    padding-top: 10px;
+}
+.black b{
+    margin-left: 0%;
+}
