@@ -1,9 +1,9 @@
 .nav_main{
     height: 78px;
     width: 80%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
+  gap: 85%;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 25px;
@@ -14,11 +14,19 @@
     gap: 15px;
     /* border: 1px solid red; */
     padding-bottom: 20px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     justify-content: center;
 }
 .left_side b{
     margin-top: 5px;
+}
+.link{
+    color: black;
+    text-decoration: none;
+    
+}
+.link:hover{
+    color: rgb(228,0,43);
 }
 
 .logo_img{
@@ -31,8 +39,8 @@
     gap: 15px;
     /* border: 1px solid red; */
     padding-bottom: 20px;
-    padding-top: 10px;
-    justify-content: center;
+    /* padding-top: 10px; */
+    justify-content: right;
 }
 .right_side b{
     border-right: 1px solid gray;
