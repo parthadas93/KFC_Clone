@@ -1,8 +1,9 @@
 import "./menu.css";
+import { MenuBig } from "../menuCardBig/MenuBig";
 
 export const Menu = () => {
   return (
-    <>
+    <div className="menu_main">
       <div className="menu_list">
         <img src="./band.png" alt="" />
         <h3>KFC MENU</h3>
@@ -18,6 +19,23 @@ export const Menu = () => {
           <li>BEVERAGES & DESSERTS</li>
         </ul>
       </div>
-    </>
+
+      <div className="menu_item">
+
+        
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+    </div>
   );
 };
