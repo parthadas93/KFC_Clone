@@ -37,4 +37,6 @@ li{
 
 .menu_item{
     display: grid;
+   
+    grid-template-columns: repeat(2, 1fr);
 }

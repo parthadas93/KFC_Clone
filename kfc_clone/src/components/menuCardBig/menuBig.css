@@ -1,0 +1,16 @@
+
+.menuBig{
+    text-align: left;
+    padding-left: 20px;
+    border: 1px solid violet;
+}
+
+.menuImg{
+    height: 280px;
+    width: 400px;
+    border-radius: 3px;
+}
+.menuDes{
+    width: 400px;
+    line-height: 30px;
+}

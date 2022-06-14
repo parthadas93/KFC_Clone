@@ -1,7 +1,18 @@
 import "./menu.css";
 import { MenuBig } from "../menuCardBig/MenuBig";
+import axios from "axios"
+import { useEffect, useState } from "react"
+
+
 
 export const Menu = () => {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    axios.get('http://localhost:8080/chicken_rolls').then((res) => {
+      setData(res.data)
+      // console.log(res.data)
+    })
+  },[])
   return (
     <div className="menu_main">
       <div className="menu_list">
@@ -22,7 +33,16 @@ export const Menu = () => {
 
       <div className="menu_item">
 
-        
+        {data.map((e) => {
+          return <>
+           
+            <MenuBig e={e}></MenuBig>
+            
+
+
+
+         </>
+       })}
 
 
 
