@@ -9,7 +9,7 @@ export const Menu = () => {
   const [data, setData] = useState([])
   useEffect(() => {
     axios.get('http://localhost:8080/chicken_rolls').then((res) => {
-      setData(res.data)
+      setData(...data, res.data)
       // console.log(res.data)
     })
   },[])
