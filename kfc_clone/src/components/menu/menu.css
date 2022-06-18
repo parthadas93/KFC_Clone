@@ -4,9 +4,9 @@
 }
 
 .menu_list{
-    width: 30%;
-   
-    border: 1px solid goldenrod;
+    width: 60%;
+  
+    /* border: 1px solid goldenrod; */
     justify-content: left;
 }
 li{
@@ -37,7 +37,13 @@ li{
 
 .menu_item{
     display: grid;
-   
-    grid-template-columns: repeat(2, 1fr);
+   grid-column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
+    position: relative
+  
+}
+.heading{
+    height: 60px;
+    width: 90%;
 }

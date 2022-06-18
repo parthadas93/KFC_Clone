@@ -1,18 +1,16 @@
 import "./menu.css";
 import { MenuBig } from "../menuCardBig/MenuBig";
-import axios from "axios"
-import { useEffect, useState } from "react"
-
-
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 export const Menu = () => {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:8080/chicken_rolls').then((res) => {
-      setData(...data, res.data)
-      console.log(res.data)
-    })
-  },[])
+    axios.get("http://localhost:8080/allData").then((res) => {
+      setData(...data, res.data);
+      console.log(res.data);
+    });
+  }, []);
   return (
     <div className="menu_main">
       <div className="menu_list">
@@ -30,32 +28,17 @@ export const Menu = () => {
           <li>BEVERAGES & DESSERTS</li>
         </ul>
       </div>
-
+     
       <div className="menu_item">
-
+        
         {data.map((e) => {
-          return <>
-           
-            <MenuBig e={e}></MenuBig>
-            
-
-
-
-         </>
-       })}
-
-
-
+          return (
+            <>
+              <MenuBig e={e}></MenuBig>
+            </>
+          );
+        })}
       </div>
-
-
-
-
-
-
-
-
-
     </div>
   );
 };
