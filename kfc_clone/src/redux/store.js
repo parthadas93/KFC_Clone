@@ -1,6 +1,6 @@
 import { applyMiddleware, combineReducers, legacy_createStore as createStore } from "redux"
 import thunk from "redux-thunk"
-import { isAuthReducer } from "./signInReducer"
+import { isAuthReducer } from "./isAuth/signInReducer"
 const rootReducer = combineReducers({
     isAuth: isAuthReducer
 })
