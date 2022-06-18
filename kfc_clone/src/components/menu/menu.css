@@ -5,7 +5,7 @@
 
 .menu_list{
     width: 60%;
-  
+    position: relative;
     /* border: 1px solid goldenrod; */
     justify-content: left;
 }
@@ -37,10 +37,12 @@ li{
 
 .menu_item{
     display: grid;
+    height: 500px;
+    overflow: scroll;
    grid-column-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
-    position: relative
+    /* position: relative */
   
 }
 .heading{
