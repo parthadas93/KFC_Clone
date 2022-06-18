@@ -1,3 +1,5 @@
+import axios from "axios"
+
 //action type
 
 export const DATA = "DATA"
@@ -12,3 +14,9 @@ export const dataAction = (data) => {
     }
 }
 
+export const getAllData = () => (dispatch) => {
+    axios.get("http://localhost:8080/allData").then((res) => {
+      dispatch(dataAction(res.data))
+      
+    });
+}

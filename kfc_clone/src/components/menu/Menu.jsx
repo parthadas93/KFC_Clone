@@ -2,14 +2,15 @@ import "./menu.css";
 import { MenuBig } from "../menuCardBig/MenuBig";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { getAllData } from "../../redux/data/dataAction";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Menu = () => {
-  const [data, setData] = useState([]);
+  const data = useSelector((store) => store.data.data)
+  console.log("menu page", data)
+  const dispatch = useDispatch()
   useEffect(() => {
-    axios.get("http://localhost:8080/allData").then((res) => {
-      setData(...data, res.data);
-      console.log(res.data);
-    });
+   dispatch( getAllData())
   }, []);
   return <>
     <div className="menu_main">
