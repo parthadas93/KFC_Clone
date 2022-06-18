@@ -39,6 +39,7 @@ li{
     display: grid;
     height: 500px;
     overflow: scroll;
+    scrollbar-width: none;
    grid-column-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 20px;
@@ -48,4 +49,7 @@ li{
 .heading{
     height: 60px;
     width: 90%;
+}
+.aaa{
+    height: 600px;
 }

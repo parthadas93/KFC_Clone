@@ -11,7 +11,7 @@ export const Menu = () => {
       console.log(res.data);
     });
   }, []);
-  return (
+  return <>
     <div className="menu_main">
       <div className="menu_list">
         <img src="./band.png" alt="" />
@@ -40,5 +40,10 @@ export const Menu = () => {
         })}
       </div>
     </div>
-  );
+
+    
+
+    <div className="aaa"></div>
+   
+    </>;
 };
