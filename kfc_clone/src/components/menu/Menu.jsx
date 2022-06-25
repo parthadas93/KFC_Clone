@@ -21,15 +21,15 @@ export const Menu = () => {
         <img src="./band.png" alt="" />
         <h3 onClick={()=>{dispatch(getCategory("allData"))}} >KFC MENU</h3>
         <ul>
-          <li >KFC BIG TREAT WEEK</li>
+          <li onClick={()=>{dispatch(getCategory("chickenBuckets"))}} >KFC BIG TREAT WEEK</li>
           <li onClick={()=>{dispatch(getCategory("chicken_rolls"))}}>NEW CHICKEN ROLLS</li>
           <li onClick={()=>{dispatch(getCategory("hotDeals"))}}>HOT DEALS</li>
           <li onClick={()=>{dispatch(getCategory("chickenBuckets"))}}>CHICKEN BUCKETS</li>
-          <li>BOX MEALS</li>
-          <li>BURGERS</li>
-          <li>BIRYANI BUCKETS</li>
-          <li>SNACK</li>
-          <li>BEVERAGES & DESSERTS</li>
+          <li onClick={()=>{dispatch(getCategory("boxMeal"))}}>BOX MEALS</li>
+          <li onClick={()=>{dispatch(getCategory("burgers"))}} >BURGERS</li>
+          <li onClick={()=>{dispatch(getCategory("biriyani"))}}>BIRYANI BUCKETS</li>
+          <li onClick={()=>{dispatch(getCategory("snacks"))}}>SNACK</li>
+          <li onClick={()=>{dispatch(getCategory("drinks"))}}>BEVERAGES & DESSERTS</li>
         </ul>
       </div>
      
@@ -38,7 +38,7 @@ export const Menu = () => {
         {category.length != 0 ? category.map((e) => {
           return (
             <>
-            <MenuBig e={e}></MenuBig>
+              <MenuBig e={ e}></MenuBig>
             </>
           )
         }) :data.map((e) => {
