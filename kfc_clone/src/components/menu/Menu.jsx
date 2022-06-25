@@ -16,6 +16,7 @@ export const Menu = () => {
    dispatch( getAllData())
   }, []);
   return <>
+    {/* <input type="text" /> */}
     <div className="menu_main">
       <div className="menu_list">
         <img src="./band.png" alt="" />
@@ -32,9 +33,9 @@ export const Menu = () => {
           <li onClick={()=>{dispatch(getCategory("drinks"))}}>BEVERAGES & DESSERTS</li>
         </ul>
       </div>
-     
+    
       <div className="menu_item">
-        
+       
         {category.length != 0 ? category.map((e) => {
           return (
             <>
