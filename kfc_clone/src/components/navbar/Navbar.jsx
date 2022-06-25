@@ -7,7 +7,8 @@ export const Navbar = () => {
     <>
       <div className="nav_main">
         <div className="left_side">
-                  <img className="logo_img" src="/logo.svg" alt="" />
+          <Link to="/"> <img className="logo_img" src="/logo.svg" alt="" /></Link>
+                 
                 
           <b><Link className="link" to="/menu">Menu</Link> </b>
           <b><Link className="link" to="/menu">Deals</Link> </b>
