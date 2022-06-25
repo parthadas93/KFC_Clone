@@ -5,8 +5,8 @@
 
 .menu_list{
     width: 60%;
-    position: relative;
-    /* border: 1px solid goldenrod; */
+    /* position: fixed; */
+    border: 1px solid goldenrod;
     justify-content: left;
 }
 li{
@@ -33,6 +33,7 @@ li{
     letter-spacing: 1px;
     text-transform: uppercase;
     padding-bottom: 1vw;
+    cursor: pointer;
 }
 
 .menu_item{

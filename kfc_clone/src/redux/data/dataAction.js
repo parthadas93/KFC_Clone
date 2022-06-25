@@ -21,8 +21,3 @@ export const getAllData = () => (dispatch) => {
     });
 }
 
-export const getCategory = (category) => (dispatch) => {
-    axios.get(`http://localhost:8080/${category}`).then((res) => {
-        console.log('category', res.data)
-    })
-}
