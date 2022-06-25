@@ -39,13 +39,13 @@ export const Menu = () => {
         {category.length != 0 ? category.map((e) => {
           return (
             <>
-              <MenuBig e={ e}></MenuBig>
+              <MenuBig key={Date.now()} e={ e}></MenuBig>
             </>
           )
         }) :data.map((e) => {
           return (
             <>
-              <MenuBig e={e}></MenuBig>
+              <MenuBig key={Date.now()} e={e}></MenuBig>
             </>
           );
         })}
