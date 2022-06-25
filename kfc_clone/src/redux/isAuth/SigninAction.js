@@ -1,4 +1,4 @@
-//action type
+
 
 export const isAuth = "ISAUTH"
 
