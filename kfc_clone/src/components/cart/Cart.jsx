@@ -14,13 +14,26 @@ export const Cart = () => {
     const [cart, setCart] = useState([])
     const cartItems = useSelector((store) => store.cart.cart)
     
-    console.log('inside cart page', cartItems)
+    // console.log('inside cart page', cartItems)
+
+    const [ind, setInd]= useState(false)
 
     useEffect(() => {
         axios.get('http://localhost:8080/cart').then((res) => {
           setCart(res.data)
       })
-  },[])
+    }, [ind])
+    
+    const qtyHandller = (e) => {
+        axios.patch(`http://localhost:8080/cart/${e.id}`, {qty:e.qty+1}).then((res) => {
+        setInd(!ind)
+            console.log(e.qty)
+    })
+        
+}
+
+
+
     return <div>
         
         <h1>cart page</h1>
@@ -32,10 +45,10 @@ export const Cart = () => {
                     <h6 className="ttl">{e.title}</h6> 
                     <h6>remove</h6>
                     </div>
-                    <button className="cartBtn">-</button>
+                    <button  className="cartBtn">-</button>
                     <h6>{ e.qty}</h6>
-                    <button className="cartBtn">+ </button>
-                    <h6>{`₹ ${e.price}` }</h6>
+                    <button onClick={()=>{qtyHandller(e)}} className="cartBtn">+ </button>
+                    <h6>{`₹ ${(e.price*e.qty).toFixed(2)}` }</h6>
                 </div>
                 <br />
             </>
