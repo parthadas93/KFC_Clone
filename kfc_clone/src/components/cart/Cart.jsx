@@ -24,8 +24,8 @@ export const Cart = () => {
       })
     }, [ind])
     
-    const qtyHandller = (e) => {
-        axios.patch(`http://localhost:8080/cart/${e.id}`, {qty:e.qty+1}).then((res) => {
+    const qtyHandller = (e, value) => {
+        axios.patch(`http://localhost:8080/cart/${e.id}`, {qty:e.qty+value}).then((res) => {
         setInd(!ind)
             console.log(e.qty)
     })
@@ -45,9 +45,9 @@ export const Cart = () => {
                     <h6 className="ttl">{e.title}</h6> 
                     <h6>remove</h6>
                     </div>
-                    <button  className="cartBtn">-</button>
+                    <button onClick={()=>{qtyHandller(e, -1)}}  className="cartBtn">-</button>
                     <h6>{ e.qty}</h6>
-                    <button onClick={()=>{qtyHandller(e)}} className="cartBtn">+ </button>
+                    <button onClick={()=>{qtyHandller(e, +1)}} className="cartBtn">+ </button>
                     <h6>{`₹ ${(e.price*e.qty).toFixed(2)}` }</h6>
                 </div>
                 <br />

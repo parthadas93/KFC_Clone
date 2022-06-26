@@ -1,14 +1,16 @@
 import "./menuBig.css"
 import { Button } from "../main_button/Button"
 import { cartAction } from "../../redux/reduxCart/cartAction"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { postCart } from "../../redux/reduxCart/cartAction"
 
 export const MenuBig = ({ e }) => {
 
-    const dispatch= useDispatch()
+  const dispatch = useDispatch()
+  const predata = useSelector((store)=>store.cart.cart)
 
-    const postItem = (data) => {
+  const postItem = (data) => {
+   
       dispatch(postCart(data))
       // console.log(data)
     }

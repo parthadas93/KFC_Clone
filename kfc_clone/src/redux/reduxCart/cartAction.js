@@ -15,6 +15,9 @@ export const postCart = (data) => (dispatch) => {
    })
 }
 
-// export const getCart =()=> () => {
-    
-// }
+export const getCart =()=> (dispatch) => {
+    axios.get('http://localhost:8080/cart').then((res) => {
+      dispatch(cartAction(res.data))
+  })
+}
+
