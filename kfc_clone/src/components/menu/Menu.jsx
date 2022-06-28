@@ -13,6 +13,7 @@ export const Menu = () => {
   const data = useSelector((store) => store.data.data);
   const category = useSelector((store) => store.category.category);
 
+
   // console.log("menu page", data)
   console.log(category);
   const dispatch = useDispatch();

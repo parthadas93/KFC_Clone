@@ -24,9 +24,10 @@ export const cartAction = (data) => {
     }
 }
 
+
 export const postCart = (data) => (dispatch) => {
     axios.post("http://localhost:8080/cart", data).then((res) => {
-    //    dispatch(cartAction(data))
+       dispatch(postCartAction(data))
         console.log('added to cart',res.data)
    })
 }

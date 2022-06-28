@@ -9,6 +9,7 @@ export const Navbar = () => {
   const user = useSelector((store) => store.isAuth.isAuth)
   const cartItem = useSelector((store) => store.cart.cart)
   const ttl = useSelector((store) => store.cart.total)
+  const newItem = useSelector((store)=>store.cart.newItem)
   
   console.log('ttl', ttl)
   
@@ -36,7 +37,7 @@ export const Navbar = () => {
 
 
 
-  },[ttl])
+  },[newItem])
   
 
 

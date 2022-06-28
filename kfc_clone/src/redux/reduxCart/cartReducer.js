@@ -4,7 +4,8 @@ import { POST } from "./cartAction"
 
 const cart = {
     cart: [],
-    total: 0
+    total: 0,
+    newItem:[]
 }
 export const cartReducer = (store= cart, {type, payload}) => {
     switch(type){
@@ -12,7 +13,9 @@ export const cartReducer = (store= cart, {type, payload}) => {
             return { ...store, cart: payload }
         case TOTAL:
            
-            return { ...store, total:payload}
+            return { ...store, total: payload }
+        case POST:
+            return {...store, newItem:payload}
         default:
         return store
     }
