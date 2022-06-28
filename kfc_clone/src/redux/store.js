@@ -13,4 +13,4 @@ const rootReducer = combineReducers({
     cart: cartReducer
 })
 export const store = createStore(rootReducer, applyMiddleware(thunk))
-console.log(store.getState())
+// console.log(store.getState())

@@ -2,6 +2,7 @@ import axios from "axios"
 export const CART = 'CART'
 export const POST = 'POST'
 export const TOTAL = 'TOTAL'
+export const DELETE='DELETE'
 
 export const totalAction = (data) => {
     return {
@@ -23,12 +24,18 @@ export const cartAction = (data) => {
         payload: data
     }
 }
+export const deleteItemAction = (data) => {
+    return {
+        type: DELETE,
+        payload :data
+    }
+}
 
 
 export const postCart = (data) => (dispatch) => {
     axios.post("http://localhost:8080/cart", data).then((res) => {
        dispatch(postCartAction(data))
-        console.log('added to cart',res.data)
+        // console.log('added to cart',res.data)
    })
 }
 
@@ -42,10 +49,18 @@ export const getCart =()=> (dispatch) => {
 export const getTotal = () => (dispatch) => {
     axios.get('http://localhost:8080/cart').then((res) => {
         let sum = res.data.reduce((a, b) => {
-           return Math.ceil(a + b.price)
+           return (a + b.price)
         }, 0)
         dispatch(totalAction(sum))
        
     })
 }
 
+
+
+export const deleteItem = (e) =>(dispatch)=> {
+    axios.delete(`http://localhost:8080/cart/${e.id}`).then((res) => {
+        dispatch(deleteItemAction(e))
+    })
+    
+}

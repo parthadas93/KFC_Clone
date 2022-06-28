@@ -8,6 +8,7 @@ import {
   getCategory,
 } from "../../redux/singleCategory/categoryAction";
 import { useDispatch, useSelector } from "react-redux";
+import { v4 as uuidv4 } from 'uuid';
 
 export const Menu = () => {
   const data = useSelector((store) => store.data.data);
@@ -15,7 +16,7 @@ export const Menu = () => {
 
 
   // console.log("menu page", data)
-  console.log(category);
+  // console.log(category);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllData());
@@ -34,63 +35,63 @@ export const Menu = () => {
             KFC MENU
           </h3>
           <ul>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("chickenBuckets"));
               }}
             >
               KFC BIG TREAT WEEK
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("chicken_rolls"));
               }}
             >
               NEW CHICKEN ROLLS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("hotDeals"));
               }}
             >
               HOT DEALS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("chickenBuckets"));
               }}
             >
               CHICKEN BUCKETS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("boxMeal"));
               }}
             >
               BOX MEALS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("burgers"));
               }}
             >
               BURGERS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("biriyani"));
               }}
             >
               BIRYANI BUCKETS
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("snacks"));
               }}
             >
               SNACK
             </li>
-            <li
+            <li key={uuidv4()}
               onClick={() => {
                 dispatch(getCategory("drinks"));
               }}

@@ -11,34 +11,21 @@ export const Navbar = () => {
   const ttl = useSelector((store) => store.cart.total)
   const newItem = useSelector((store)=>store.cart.newItem)
   
-  console.log('ttl', ttl)
+  // console.log('ttl', ttl)
   
   const dispatch = useDispatch()
 
-    //  let sum = cartItem.reduce((a,b)=>{
-    //   let x = (Math.ceil(a + b.price))
-      
-    //   return x
-    //  }, 0)
-     
-    //  const [total, setTotal] = useState(sum)
-//  console.log("sum new",sum)
-  // {
-  //   cartItem.reduce((a, b) => {
-  //   return setTotal(Math.ceil(a+b.price))
-  // },0)}
-  
 
   useEffect(() => {
     dispatch(getCart())
  
    dispatch( getTotal())
-    console.log("cartItems", cartItem)
+    // console.log("cartItems", cartItem)
 
 
 
   },[newItem])
-  
+  // , cartItem
 
 
   return (
@@ -58,7 +45,7 @@ export const Navbar = () => {
           <b><Link className="link" to="/signup">{!user ? "Signup" : "My Account"}</Link> </b>
 
          
-          <h6 className="cartCountItems">{ "₹"+ ttl}</h6>
+          <h6 className="cartCountItems">{ "₹"+ ttl.toFixed(2)}</h6>
 
                <Link to="/cart"><img className="cart_img" src="/cart.svg" alt="" /></Link>   
                  
