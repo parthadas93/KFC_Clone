@@ -1,16 +1,13 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-// import { getCart } from "../../redux/reduxCart/cartAction"
+import { getCart } from "../../redux/reduxCart/cartAction"
 import "./cart.css"
 
 
 
 export const Cart = () => {
-    // const dispatch= useDispatch()
-    // useEffect(() => {
-    //     dispatch(getCart())
-    // },[])
+const dispatch = useDispatch()
     const [cart, setCart] = useState([])
     const cartItems = useSelector((store) => store.cart.cart)
     
@@ -19,9 +16,12 @@ export const Cart = () => {
     const [ind, setInd]= useState(false)
 
     useEffect(() => {
-        axios.get('http://localhost:8080/cart').then((res) => {
-          setCart(res.data)
-      })
+        // axios.get('http://localhost:8080/cart').then((res) => {
+        //   setCart(res.data)
+
+    //   })
+        
+        dispatch(getCart())
     }, [ind])
     
     const qtyHandller = (e, value) => {
@@ -37,7 +37,7 @@ export const Cart = () => {
     return <div>
         
         <h1>cart page</h1>
-        {cart.map((e) => {
+        {cartItems.map((e) => {
             return <>
             <div className="cartItem">
                     <img src={e.img} alt="" />

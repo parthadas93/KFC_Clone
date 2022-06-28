@@ -40,7 +40,7 @@
       "type": "Non veg",
       "price": 219.04,
       "des": "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch",
-      "id": 1
+      "id": 5
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002100.jpg?ver=16.66",
@@ -48,7 +48,7 @@
       "type": "Non veg",
       "price": 428.57,
       "des": "Two ka crunch, in one munch- for 2! Combo of 2 new Popcorn Nachos & 2 Regular Pepsi",
-      "id": 2
+      "id": 6
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K663.jpg?ver=16.66",
@@ -56,7 +56,7 @@
       "type": "Non veg",
       "price": 179.4,
       "des": "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!",
-      "id": 3
+      "id": 7
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002101.jpg?ver=16.66",
@@ -64,7 +64,7 @@
       "type": "Non veg",
       "price": 279.04,
       "des": "New Popcorn Nachos, 2pc Wings & 1 Regular Pepsi in this delightful snack",
-      "id": 4
+      "id": 8
     }
   ],
   "hotDeals": [
@@ -73,7 +73,8 @@
       "title": "Popcorn Chicken Biryani Bucket & Pepsi combo",
       "type": "Non veg",
       "price": 239.05,
-      "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi"
+      "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi",
+      "id": 9
     }
   ],
   "chickenBuckets": [
@@ -83,7 +84,7 @@
       "type": "Non veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy (serves 2)",
-      "id": 1
+      "id": 10
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K627.jpg?ver=16.66",
@@ -91,7 +92,7 @@
       "type": "Non veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy (serves 2)",
-      "id": 2
+      "id": 11
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K511.jpg?ver=16.66",
@@ -99,7 +100,7 @@
       "type": "Non veg",
       "price": 428.57,
       "des": "Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips (serves 2)",
-      "id": 3
+      "id": 12
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000936.jpg?ver=16.66",
@@ -107,7 +108,7 @@
       "type": "Non veg",
       "price": 528.57,
       "des": "Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)",
-      "id": 4
+      "id": 13
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K512.jpg?ver=16.66",
@@ -115,7 +116,7 @@
       "type": "Non veg",
       "price": 828.57,
       "des": "Your favorite chicken leg pieces in a bucket. 10 pieces served with 4 dips (serves 3-4)",
-      "id": 5
+      "id": 14
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000637.jpg?ver=16.66",
@@ -123,7 +124,7 @@
       "type": "Non veg",
       "price": 628.57,
       "des": "Save with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 3 dips (serves 2-3)",
-      "id": 6
+      "id": 15
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000894.jpg?ver=16.66",
@@ -131,7 +132,7 @@
       "type": "Non veg",
       "price": 659.05,
       "des": "Save big with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red & 2 Pepsi (serves 2)",
-      "id": 7
+      "id": 16
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000937.jpg?ver=16.66",
@@ -139,7 +140,7 @@
       "type": "Non veg",
       "price": 420,
       "des": "5 pieces of Colonel's signature Smoky Red with 2 Pepsi (serves 2)",
-      "id": 8
+      "id": 17
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K445.jpg?ver=16.66",
@@ -147,7 +148,7 @@
       "type": "Non veg",
       "price": 399.05,
       "des": "5 pieces of Colonel's signature Smoky Red (serves 2)",
-      "id": 9
+      "id": 18
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000938.jpg?ver=16.66",
@@ -155,7 +156,7 @@
       "type": "Non veg",
       "price": 516.19,
       "des": "4 pieces of crispy, juicy chicken in a bucket served with 2 Pepsi (serves 2)",
-      "id": 10
+      "id": 19
     }
   ],
   "boxMeal": [
@@ -165,7 +166,7 @@
       "type": "Non veg",
       "price": 159.05,
       "des": "Value Meal with 2 piece Hot Wings, 1 piece Hot & Crispy and Pepsi",
-      "id": 1
+      "id": 20
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001042.jpg?ver=16.66",
@@ -173,7 +174,7 @@
       "type": "Non veg",
       "price": 265.71,
       "des": "Value Meal with flavorful Popcorn Biryani Bucket & spicy dip, 2 piece Hot Wings and Pepsi",
-      "id": 2
+      "id": 21
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000994.jpg?ver=16.66",
@@ -181,7 +182,7 @@
       "type": "Non veg",
       "price": 268.57,
       "des": "Value Meal with Classic Zinger, 2 piece Hot Wings, Fries and Pepsi",
-      "id": 3
+      "id": 22
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000995.jpg?ver=16.66",
@@ -189,7 +190,7 @@
       "type": "Non veg",
       "price": 288.57,
       "des": "Value Meal with Tandoori Zinger, 2 piece Hot Wings, Fries and Pepsi",
-      "id": 4
+      "id": 23
     }
   ],
   "burgers": [
@@ -199,7 +200,7 @@
       "type": "Non veg",
       "price": 99.05,
       "des": "Value burger with a chicken fillet, lettuce and mayo",
-      "id": 1
+      "id": 24
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K493.jpg?ver=16.66",
@@ -207,7 +208,7 @@
       "type": "Veg",
       "price": 68.57,
       "des": "Value burger with a veg patty, lettuce and spicy sauce",
-      "id": 2
+      "id": 25
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K491.jpg?ver=16.66",
@@ -215,7 +216,7 @@
       "type": "Non Veg",
       "price": 99.057,
       "des": "Value burger with a chicken fillet, lettuce and spicy sauce",
-      "id": 3
+      "id": 26
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001018.jpg?ver=16.66",
@@ -223,7 +224,7 @@
       "type": "Veg",
       "price": 178.1,
       "des": "Value burger with a veg patty, lettuce and mayo served with fries & Pepsi",
-      "id": 4
+      "id": 27
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002005.jpg?ver=16.66",
@@ -231,7 +232,7 @@
       "type": "Non Veg",
       "price": 228.57,
       "des": "Value burger with a chicken fillet, lettuce and mayo served with Popcorn & Pepsi",
-      "id": 5
+      "id": 28
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000942.jpg?ver=16.66",
@@ -239,7 +240,7 @@
       "type": "Non Veg",
       "price": 365.71,
       "des": "Relish the Classic Zinger with 4 pieces Hot Wings and Pepsi",
-      "id": 6
+      "id": 29
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=16.66",
@@ -247,7 +248,7 @@
       "type": "Non Veg",
       "price": 168.57,
       "des": "Signature Chicken Zinger with crispy fillet, lettuce and mayo packed in a soft bun",
-      "id": 7
+      "id": 30
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K540.jpg?ver=16.66",
@@ -255,7 +256,7 @@
       "type": "Non Veg",
       "price": 179.05,
       "des": "Your favorite Zinger with a Tandoori twist! Crunchy Chicken, fresh veggies & a delicious Tandoori sauce.",
-      "id": 8
+      "id": 31
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K146.jpg?ver=16.66",
@@ -263,7 +264,7 @@
       "type": "Veg",
       "price": 159.05,
       "des": "Our signature veg burger, with crispy patties, veggies & a tangy sauce",
-      "id": 9
+      "id": 32
     }
   ],
   "biriyani": [
@@ -273,7 +274,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Hot & Crispy chicken served with a spicy gravy & Pepsi",
-      "id": 10
+      "id": 33
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001053.jpg?ver=16.66",
@@ -281,7 +282,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi",
-      "id": 11
+      "id": 34
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001054.jpg?ver=16.66",
@@ -289,7 +290,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Grilled chicken served with a spicy gravy & Pepsi",
-      "id": 12
+      "id": 35
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K623.jpg?ver=16.66",
@@ -297,7 +298,7 @@
       "type": "Non Veg",
       "price": 199.05,
       "des": "New flavorful Biryani rice with Hot & Crispy chicken served with a spicy gravy",
-      "id": 13
+      "id": 36
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K625.jpg?ver=16.66",
@@ -305,7 +306,7 @@
       "type": "Non Veg",
       "price": 199.05,
       "des": "New flavorful Biryani rice with Grilled chicken served with a spicy gravy",
-      "id": 14
+      "id": 37
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K626.jpg?ver=16.66",
@@ -313,7 +314,7 @@
       "type": "Non Veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy (serves 2)",
-      "id": 15
+      "id": 38
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K627.jpg?ver=16.66",
@@ -321,7 +322,7 @@
       "type": "Non Veg",
       "price": 499.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy & 2 Pepsi (serves 2)",
-      "id": 16
+      "id": 39
     }
   ],
   "snacks": [
@@ -331,7 +332,7 @@
       "type": "Veg",
       "price": 189.52,
       "des": "Spicy dynamite mayo -one of our signature sauce in a bottle",
-      "id": 1
+      "id": 40
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K660.jpg?ver=16.66",
@@ -339,7 +340,7 @@
       "type": "Veg",
       "price": 189.52,
       "des": "Hot peppery Nashville our signature sauce, in a bottle",
-      "id": 2
+      "id": 41
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000976.jpg?ver=16.66",
@@ -347,7 +348,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "Our signature snack served with the new Tandoori Masala dip",
-      "id": 3
+      "id": 42
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000977.jpg?ver=16.66",
@@ -355,7 +356,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "3 pieces tender, juicy boneless strips served with the new Tandoori Masala dip",
-      "id": 4
+      "id": 43
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000978.jpg?ver=16.66",
@@ -363,7 +364,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "Bite sized boneless pieces of Hot & Crispy served with the new Tandoori Masala dip",
-      "id": 5
+      "id": 44
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K223.jpg?ver=16.66",
@@ -371,7 +372,7 @@
       "type": "Non Veg",
       "price": 180,
       "des": "Bite sized boneless pieces of Hot & Crispy with special spices",
-      "id": 6
+      "id": 45
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K303.jpg?ver=16.66",
@@ -379,7 +380,7 @@
       "type": "Non Veg",
       "price": 135.24,
       "des": "Our signature snack to spice up your meal",
-      "id": 7
+      "id": 46
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K007.jpg?ver=16.66",
@@ -387,7 +388,7 @@
       "type": "Non Veg",
       "price": 188.57,
       "des": "Our signature Hot & Crispy chicken. The perfect add on",
-      "id": 8
+      "id": 47
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K037.jpg?ver=16.66",
@@ -395,7 +396,7 @@
       "type": "Non Veg",
       "price": 219.05,
       "des": "6 pieces tender, juicy boneless strips.",
-      "id": 9
+      "id": 48
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000792.jpg?ver=16.66",
@@ -403,7 +404,7 @@
       "type": "Non Veg",
       "price": 248.57,
       "des": "Enjoy your favorite large chicken Popcorn with fries in bucket",
-      "id": 10
+      "id": 49
     }
   ],
   "drinks": [
@@ -413,7 +414,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 1
+      "id": 50
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K079.jpg?ver=16.66",
@@ -421,7 +422,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 2
+      "id": 51
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K081.jpg?ver=16.66",
@@ -429,7 +430,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 3
+      "id": 52
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K496.jpg?ver=16.66",
@@ -437,7 +438,7 @@
       "type": "Veg",
       "price": 119.05,
       "des": "A delicious chocolate & cake-based dessert, for a sweet ending to your meal.",
-      "id": 4
+      "id": 53
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K497.jpg?ver=16.66",
@@ -445,7 +446,7 @@
       "type": "Veg",
       "price": 119.05,
       "des": "A delicious coffee, chocolate & cake-based dessert, for a sweet ending to your meal.",
-      "id": 5
+      "id": 54
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K107.jpg?ver=16.66",
@@ -453,7 +454,7 @@
       "type": "Veg",
       "price": 68.57,
       "des": "Our signature Krusher",
-      "id": 6
+      "id": 55
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K187.jpg?ver=16.66",
@@ -461,7 +462,7 @@
       "type": "Veg",
       "price": 39.05,
       "des": "Our signature Krusher",
-      "id": 7
+      "id": 56
     }
   ],
   "allData": [
@@ -471,7 +472,7 @@
       "type": "non-veg",
       "price": 218.1,
       "des": "Street style roll with single chicken strip, onions and two spicy sauce. Plus regular fries and Pepsi",
-      "id": 1
+      "id": 57
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=16.58",
@@ -479,7 +480,7 @@
       "type": "Non veg",
       "price": 119.05,
       "des": "Street style roll with single chicken strip, onions and two spicy sauce",
-      "id": 2
+      "id": 58
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002064.jpg?ver=16.58",
@@ -487,7 +488,7 @@
       "type": "Non veg",
       "price": 258.1,
       "des": "Street style roll with double chicken strips, onions and two spicy sauce. Plus regular fries and Pepsi",
-      "id": 3
+      "id": 59
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K657.jpg?ver=16.58",
@@ -495,7 +496,7 @@
       "type": "Non veg",
       "price": 159.05,
       "des": "Street style roll with double chicken strip, onions and two spicy sauce",
-      "id": 4
+      "id": 60
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002099.jpg?ver=16.58",
@@ -503,7 +504,7 @@
       "type": "Non veg",
       "price": 219.04,
       "des": "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch",
-      "id": 1
+      "id": 61
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002100.jpg?ver=16.66",
@@ -511,7 +512,7 @@
       "type": "Non veg",
       "price": 428.57,
       "des": "Two ka crunch, in one munch- for 2! Combo of 2 new Popcorn Nachos & 2 Regular Pepsi",
-      "id": 2
+      "id": 62
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K663.jpg?ver=16.66",
@@ -519,7 +520,7 @@
       "type": "Non veg",
       "price": 179.4,
       "des": "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch!",
-      "id": 3
+      "id": 63
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002101.jpg?ver=16.66",
@@ -527,14 +528,15 @@
       "type": "Non veg",
       "price": 279.04,
       "des": "New Popcorn Nachos, 2pc Wings & 1 Regular Pepsi in this delightful snack",
-      "id": 4
+      "id": 64
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001053.jpg?ver=16.66",
       "title": "Popcorn Chicken Biryani Bucket & Pepsi combo",
       "type": "Non veg",
       "price": 239.05,
-      "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi"
+      "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi",
+      "id": 65
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K626.jpg?ver=16.66",
@@ -542,7 +544,7 @@
       "type": "Non veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy (serves 2)",
-      "id": 1
+      "id": 66
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K627.jpg?ver=16.66",
@@ -550,7 +552,7 @@
       "type": "Non veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy (serves 2)",
-      "id": 2
+      "id": 67
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K511.jpg?ver=16.66",
@@ -558,7 +560,7 @@
       "type": "Non veg",
       "price": 428.57,
       "des": "Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips (serves 2)",
-      "id": 3
+      "id": 68
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000936.jpg?ver=16.66",
@@ -566,7 +568,7 @@
       "type": "Non veg",
       "price": 528.57,
       "des": "Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips and 2 Pepsi (serves 2)",
-      "id": 4
+      "id": 69
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K512.jpg?ver=16.66",
@@ -574,7 +576,7 @@
       "type": "Non veg",
       "price": 828.57,
       "des": "Your favorite chicken leg pieces in a bucket. 10 pieces served with 4 dips (serves 3-4)",
-      "id": 5
+      "id": 70
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000637.jpg?ver=16.66",
@@ -582,7 +584,7 @@
       "type": "Non veg",
       "price": 628.57,
       "des": "Save with 4 pieces Hot & Crispy, 6 pieces Hot Wings, 4 pieces Boneless Strips, 3 Pepsi and 3 dips (serves 2-3)",
-      "id": 6
+      "id": 71
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000894.jpg?ver=16.66",
@@ -590,7 +592,7 @@
       "type": "Non veg",
       "price": 659.05,
       "des": "Save big with this bucket that has 4 pieces of Hot & Crispy and 4 pieces of Smoky Red & 2 Pepsi (serves 2)",
-      "id": 7
+      "id": 72
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000937.jpg?ver=16.66",
@@ -598,7 +600,7 @@
       "type": "Non veg",
       "price": 420,
       "des": "5 pieces of Colonel's signature Smoky Red with 2 Pepsi (serves 2)",
-      "id": 8
+      "id": 73
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K445.jpg?ver=16.66",
@@ -606,7 +608,7 @@
       "type": "Non veg",
       "price": 399.05,
       "des": "5 pieces of Colonel's signature Smoky Red (serves 2)",
-      "id": 9
+      "id": 74
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000938.jpg?ver=16.66",
@@ -614,7 +616,7 @@
       "type": "Non veg",
       "price": 516.19,
       "des": "4 pieces of crispy, juicy chicken in a bucket served with 2 Pepsi (serves 2)",
-      "id": 10
+      "id": 75
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000992.jpg?ver=16.66",
@@ -622,7 +624,7 @@
       "type": "Non veg",
       "price": 159.05,
       "des": "Value Meal with 2 piece Hot Wings, 1 piece Hot & Crispy and Pepsi",
-      "id": 1
+      "id": 76
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001042.jpg?ver=16.66",
@@ -630,7 +632,7 @@
       "type": "Non veg",
       "price": 265.71,
       "des": "Value Meal with flavorful Popcorn Biryani Bucket & spicy dip, 2 piece Hot Wings and Pepsi",
-      "id": 2
+      "id": 77
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000994.jpg?ver=16.66",
@@ -638,7 +640,7 @@
       "type": "Non veg",
       "price": 268.57,
       "des": "Value Meal with Classic Zinger, 2 piece Hot Wings, Fries and Pepsi",
-      "id": 3
+      "id": 78
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000995.jpg?ver=16.66",
@@ -646,7 +648,7 @@
       "type": "Non veg",
       "price": 288.57,
       "des": "Value Meal with Tandoori Zinger, 2 piece Hot Wings, Fries and Pepsi",
-      "id": 4
+      "id": 79
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K490.jpg?ver=16.66",
@@ -654,7 +656,7 @@
       "type": "Non veg",
       "price": 99.05,
       "des": "Value burger with a chicken fillet, lettuce and mayo",
-      "id": 1
+      "id": 80
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K493.jpg?ver=16.66",
@@ -662,7 +664,7 @@
       "type": "Veg",
       "price": 68.57,
       "des": "Value burger with a veg patty, lettuce and spicy sauce",
-      "id": 2
+      "id": 81
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K491.jpg?ver=16.66",
@@ -670,7 +672,7 @@
       "type": "Non Veg",
       "price": 99.057,
       "des": "Value burger with a chicken fillet, lettuce and spicy sauce",
-      "id": 3
+      "id": 82
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001018.jpg?ver=16.66",
@@ -678,7 +680,7 @@
       "type": "Veg",
       "price": 178.1,
       "des": "Value burger with a veg patty, lettuce and mayo served with fries & Pepsi",
-      "id": 4
+      "id": 83
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002005.jpg?ver=16.66",
@@ -686,7 +688,7 @@
       "type": "Non Veg",
       "price": 228.57,
       "des": "Value burger with a chicken fillet, lettuce and mayo served with Popcorn & Pepsi",
-      "id": 5
+      "id": 84
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000942.jpg?ver=16.66",
@@ -694,7 +696,7 @@
       "type": "Non Veg",
       "price": 365.71,
       "des": "Relish the Classic Zinger with 4 pieces Hot Wings and Pepsi",
-      "id": 6
+      "id": 85
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=16.66",
@@ -702,7 +704,7 @@
       "type": "Non Veg",
       "price": 168.57,
       "des": "Signature Chicken Zinger with crispy fillet, lettuce and mayo packed in a soft bun",
-      "id": 7
+      "id": 86
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K540.jpg?ver=16.66",
@@ -710,7 +712,7 @@
       "type": "Non Veg",
       "price": 179.05,
       "des": "Your favorite Zinger with a Tandoori twist! Crunchy Chicken, fresh veggies & a delicious Tandoori sauce.",
-      "id": 8
+      "id": 87
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K146.jpg?ver=16.66",
@@ -718,7 +720,7 @@
       "type": "Veg",
       "price": 159.05,
       "des": "Our signature veg burger, with crispy patties, veggies & a tangy sauce",
-      "id": 9
+      "id": 88
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001052.jpg?ver=16.66",
@@ -726,7 +728,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Hot & Crispy chicken served with a spicy gravy & Pepsi",
-      "id": 10
+      "id": 89
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001053.jpg?ver=16.66",
@@ -734,7 +736,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi",
-      "id": 11
+      "id": 90
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001054.jpg?ver=16.66",
@@ -742,7 +744,7 @@
       "type": "Non Veg",
       "price": 239.05,
       "des": "New flavorful Biryani rice with Grilled chicken served with a spicy gravy & Pepsi",
-      "id": 12
+      "id": 91
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K623.jpg?ver=16.66",
@@ -750,7 +752,7 @@
       "type": "Non Veg",
       "price": 199.05,
       "des": "New flavorful Biryani rice with Hot & Crispy chicken served with a spicy gravy",
-      "id": 13
+      "id": 92
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K625.jpg?ver=16.66",
@@ -758,7 +760,7 @@
       "type": "Non Veg",
       "price": 199.05,
       "des": "New flavorful Biryani rice with Grilled chicken served with a spicy gravy",
-      "id": 14
+      "id": 93
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K626.jpg?ver=16.66",
@@ -766,7 +768,7 @@
       "type": "Non Veg",
       "price": 419.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy (serves 2)",
-      "id": 15
+      "id": 94
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K627.jpg?ver=16.66",
@@ -774,7 +776,7 @@
       "type": "Non Veg",
       "price": 499.05,
       "des": "New flavorful Biryani rice with 2 Hot & Crispy chicken pieces served with a spicy gravy & 2 Pepsi (serves 2)",
-      "id": 16
+      "id": 95
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K659.jpg?ver=16.66",
@@ -782,7 +784,7 @@
       "type": "Veg",
       "price": 189.52,
       "des": "Spicy dynamite mayo -one of our signature sauce in a bottle",
-      "id": 1
+      "id": 96
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K660.jpg?ver=16.66",
@@ -790,7 +792,7 @@
       "type": "Veg",
       "price": 189.52,
       "des": "Hot peppery Nashville our signature sauce, in a bottle",
-      "id": 2
+      "id": 97
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000976.jpg?ver=16.66",
@@ -798,7 +800,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "Our signature snack served with the new Tandoori Masala dip",
-      "id": 3
+      "id": 98
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000977.jpg?ver=16.66",
@@ -806,7 +808,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "3 pieces tender, juicy boneless strips served with the new Tandoori Masala dip",
-      "id": 4
+      "id": 99
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000978.jpg?ver=16.66",
@@ -814,7 +816,7 @@
       "type": "Non Veg",
       "price": 155.24,
       "des": "Bite sized boneless pieces of Hot & Crispy served with the new Tandoori Masala dip",
-      "id": 5
+      "id": 100
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K223.jpg?ver=16.66",
@@ -822,7 +824,7 @@
       "type": "Non Veg",
       "price": 180,
       "des": "Bite sized boneless pieces of Hot & Crispy with special spices",
-      "id": 6
+      "id": 101
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K303.jpg?ver=16.66",
@@ -830,7 +832,7 @@
       "type": "Non Veg",
       "price": 135.24,
       "des": "Our signature snack to spice up your meal",
-      "id": 7
+      "id": 102
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K007.jpg?ver=16.66",
@@ -838,7 +840,7 @@
       "type": "Non Veg",
       "price": 188.57,
       "des": "Our signature Hot & Crispy chicken. The perfect add on",
-      "id": 8
+      "id": 103
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K037.jpg?ver=16.66",
@@ -846,7 +848,7 @@
       "type": "Non Veg",
       "price": 219.05,
       "des": "6 pieces tender, juicy boneless strips.",
-      "id": 9
+      "id": 104
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000792.jpg?ver=16.66",
@@ -854,7 +856,7 @@
       "type": "Non Veg",
       "price": 248.57,
       "des": "Enjoy your favorite large chicken Popcorn with fries in bucket",
-      "id": 10
+      "id": 105
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K077.jpg?ver=16.66",
@@ -862,7 +864,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 1
+      "id": 106
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K079.jpg?ver=16.66",
@@ -870,7 +872,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 2
+      "id": 107
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K081.jpg?ver=16.66",
@@ -878,7 +880,7 @@
       "type": "Veg",
       "price": 88.57,
       "des": "Refereshing beverage",
-      "id": 3
+      "id": 108
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K496.jpg?ver=16.66",
@@ -886,7 +888,7 @@
       "type": "Veg",
       "price": 119.05,
       "des": "A delicious chocolate & cake-based dessert, for a sweet ending to your meal.",
-      "id": 4
+      "id": 109
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K497.jpg?ver=16.66",
@@ -894,7 +896,7 @@
       "type": "Veg",
       "price": 119.05,
       "des": "A delicious coffee, chocolate & cake-based dessert, for a sweet ending to your meal.",
-      "id": 5
+      "id": 110
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K107.jpg?ver=16.66",
@@ -902,7 +904,7 @@
       "type": "Veg",
       "price": 68.57,
       "des": "Our signature Krusher",
-      "id": 6
+      "id": 111
     },
     {
       "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K187.jpg?ver=16.66",
@@ -910,44 +912,26 @@
       "type": "Veg",
       "price": 39.05,
       "des": "Our signature Krusher",
-      "id": 7
+      "id": 112
     }
   ],
   "cart": [
     {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K657.jpg?ver=16.58",
-      "title": "Double Chicken Roll",
-      "type": "Non veg",
-      "price": 159.05,
-      "des": "Street style roll with double chicken strip, onions and two spicy sauce",
-      "id": 4,
+      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002063.jpg?ver=16.58",
+      "title": "Single Chicken Roll Meal",
+      "type": "non-veg",
+      "price": 218.1,
+      "des": "Street style roll with single chicken strip, onions and two spicy sauce. Plus regular fries and Pepsi",
+      "id": 57,
       "qty": 1
     },
     {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K511.jpg?ver=16.66",
-      "title": "5 Leg piece + 2 Dips",
+      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=16.58",
+      "title": "Single Chicken Roll",
       "type": "Non veg",
-      "price": 428.57,
-      "des": "Your favorite chicken leg pieces in a bucket. 5 pieces served with 2 dips (serves 2)",
-      "id": 3,
-      "qty": 1
-    },
-    {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001053.jpg?ver=16.66",
-      "title": "Popcorn Chicken Biryani Bucket & Pepsi combo",
-      "type": "Non veg",
-      "price": 239.05,
-      "des": "New flavorful Biryani rice with Popcorn chicken served with a spicy gravy & Pepsi",
-      "qty": 1,
-      "id": 5
-    },
-    {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000992.jpg?ver=16.66",
-      "title": "All Chicken Box Meal",
-      "type": "Non veg",
-      "price": 159.05,
-      "des": "Value Meal with 2 piece Hot Wings, 1 piece Hot & Crispy and Pepsi",
-      "id": 1,
+      "price": 119.05,
+      "des": "Street style roll with single chicken strip, onions and two spicy sauce",
+      "id": 58,
       "qty": 1
     }
   ]
