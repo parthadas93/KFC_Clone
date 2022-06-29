@@ -6,6 +6,7 @@ import "./cart.css"
 import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import { Button } from "../main_button/Button"
+import { useNavigate } from "react-router-dom"
 
 
 
@@ -15,6 +16,7 @@ const dispatch = useDispatch()
     const cartItem = useSelector((store) => store.cart.deletedItem)
     const cartItems = useSelector((store) => store.cart.cart)
     const ttl = useSelector((store) => store.cart.total)
+    const navigate = useNavigate()
     
     // console.log('inside cart page', cartItems)
 
@@ -36,7 +38,11 @@ const dispatch = useDispatch()
             console.log(e.qty)
     })
         
-}
+    }
+    
+    const handleNavigate = () => {
+        navigate('/')
+    }
 
 
 
@@ -91,7 +97,7 @@ const dispatch = useDispatch()
                
             </div>
             <br />
-            <Button>CheckOut</Button>
+            <Button onClick={()=>{handleNavigate()}}>CheckOut</Button>
         
             </div>
 
