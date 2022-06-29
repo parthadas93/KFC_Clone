@@ -37,6 +37,7 @@ export const Navbar = () => {
                 
           <b><Link className="link" to="/menu">Menu</Link> </b>
           <b><Link className="link" to="/menu">Deals</Link> </b>
+          {/* <b><Link className="link" to="/findKFC">Find a KFC</Link> </b> */}
         </div>
         <div className="right_side">
           <span>

@@ -55,7 +55,7 @@
 .cart_img{
     height: 50px;
     margin-top: 30px ;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
     margin-left: 0px;
 }
 .cartCountItems{

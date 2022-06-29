@@ -84,10 +84,10 @@ const dispatch = useDispatch()
                 <span className="checkout_right">{"₹"+ttl.toFixed(2)}</span>
                 <br />
                 <span className="checkout_left"> Delivary Charge-</span>
-                <span className="checkout_right">{"₹"+70.00}</span>
+                <span className="checkout_right">{"₹"+"70.00"}</span>
                 <br />
                 <span className="checkout_left">Grand Total- </span>
-                <span className="checkout_right">{(ttl + 70).toFixed(2)}</span>
+                <span className="checkout_right">₹{(ttl + 70).toFixed(2)}</span>
                
             </div>
             <br />

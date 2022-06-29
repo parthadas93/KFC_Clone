@@ -6,6 +6,7 @@ import { Home } from './components/home/Home'
 import { Route, Routes } from 'react-router-dom'
 import { Menu } from './components/menu/Menu'
 import { Cart } from './components/cart/Cart'
+// import { FindKFC } from './findkfc/FindKfc'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={ <Home></Home>}></Route>
         <Route path='/menu' element={<Menu></Menu>}></Route>
-        <Route path="/cart" element={<Cart></Cart>}></Route>
+        {/* <Route path="/findKFC" element={<FindKFC></FindKFC>}></Route> */}
       </Routes>
      
     </div>
