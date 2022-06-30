@@ -41,7 +41,7 @@ const dispatch = useDispatch()
     }
     
     const handleNavigate = () => {
-        navigate('/')
+        navigate('/checkout')
     }
 
 
