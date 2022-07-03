@@ -1,6 +1,7 @@
 import React from "react";
 import "./checkout.css";
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import axios from "axios";
@@ -11,7 +12,8 @@ export const Checkout = () => {
   const [lat, setLat] = useState(null)
   const [long, setLong] = useState(null)
   const [adress, setAdress] = useState(null)
-  const [show, setShow]= useState(false)
+  const [show, setShow] = useState(false)
+  const navigate= useNavigate()
   
   const getAdress = async (lat, long) => {
     await axios.get(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${long}&format=json`).then((res) => {
@@ -46,7 +48,9 @@ export const Checkout = () => {
   return <div className="checkout_main">
     <div className="checkoutAdressDiv">
       <h4>Set you delivery details</h4>
-      <span className="location" onClick={()=>{setShow(true)}}>Use My Current Location <i class="fa-solid fa-location-dot"></i></span>
+      <span className="location" onClick={() => { setShow(true) }}>Use My Current Location <i class="fa-solid fa-location-dot"></i></span>
+      <br />
+      <span onClick={()=>{setShow(false)}}>Enter manually</span>
       <br />
       <br />
 
@@ -113,7 +117,9 @@ export const Checkout = () => {
 
       
       
-      <Button>SUBMIT</Button>
+      <Button onClick={() => {
+        navigate('/payment')
+      }}>SUBMIT</Button>
       
 
 

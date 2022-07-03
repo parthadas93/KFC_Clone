@@ -7,6 +7,8 @@ import { Route, Routes } from 'react-router-dom'
 import { Menu } from './components/menu/Menu'
 import { Cart } from './components/cart/Cart'
 import {Checkout} from "./components/checkout/Checkout"
+import PaymentPage from './components/payment/PaymentPage'
+import { Footer } from './components/footer/Footer'
 
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
         <Route path='/menu' element={<Menu></Menu>}></Route>
         <Route path="/cart" element={<Cart></Cart>}></Route>
         <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+        <Route path="/payment" element={<PaymentPage></PaymentPage>} ></Route>
       </Routes>
+      <Footer></Footer>
      
     </div>
   )

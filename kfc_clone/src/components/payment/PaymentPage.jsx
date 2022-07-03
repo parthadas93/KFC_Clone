@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import Card from 'react-credit-cards';
 import styles from "./styles.css"
+import { useState } from 'react';
 
 import {
   formatCreditCardNumber,
@@ -12,7 +13,6 @@ import {
 
 
 import 'react-credit-cards/es/styles-compiled.css';
-
 
 
 export default class PaymentPage extends React.Component {
@@ -66,11 +66,14 @@ export default class PaymentPage extends React.Component {
     
   };
 
+
   render() {
     const { name, number, expiry, cvc, focused, issuer, formData } = this.state;
 
     return (
+      
       <div key="Payment">
+        
         <div className="App-payment">
           <Card
             number={number}

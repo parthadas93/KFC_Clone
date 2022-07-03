@@ -933,6 +933,15 @@
       "des": "Street style roll with double chicken strips, onions and two spicy sauce. Plus regular fries and Pepsi",
       "id": 59,
       "qty": 1
+    },
+    {
+      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001042.jpg?ver=16.66",
+      "title": "Popcorn Biryani Box",
+      "type": "Non veg",
+      "price": 265.71,
+      "des": "Value Meal with flavorful Popcorn Biryani Bucket & spicy dip, 2 piece Hot Wings and Pepsi",
+      "id": 77,
+      "qty": 1
     }
   ]
 }
