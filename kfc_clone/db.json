@@ -917,12 +917,21 @@
   ],
   "cart": [
     {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002063.jpg?ver=16.58",
-      "title": "Single Chicken Roll Meal",
-      "type": "non-veg",
-      "price": 218.1,
-      "des": "Street style roll with single chicken strip, onions and two spicy sauce. Plus regular fries and Pepsi",
-      "id": 57,
+      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002099.jpg?ver=16.58",
+      "title": "Popcorn Nachos Meal (1 Popcorn Nachos+1 Regular Pepsi",
+      "type": "Non veg",
+      "price": 219.04,
+      "des": "Crunchy popcorn & 2 delicious sauces paired with masala Doritos. 2 ka crunch, in 1 munch",
+      "id": 61,
+      "qty": 1
+    },
+    {
+      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=16.58",
+      "title": "Single Chicken Roll",
+      "type": "Non veg",
+      "price": 119.05,
+      "des": "Street style roll with single chicken strip, onions and two spicy sauce",
+      "id": 58,
       "qty": 1
     },
     {
@@ -932,15 +941,6 @@
       "price": 258.1,
       "des": "Street style roll with double chicken strips, onions and two spicy sauce. Plus regular fries and Pepsi",
       "id": 59,
-      "qty": 1
-    },
-    {
-      "img": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001042.jpg?ver=16.66",
-      "title": "Popcorn Biryani Box",
-      "type": "Non veg",
-      "price": 265.71,
-      "des": "Value Meal with flavorful Popcorn Biryani Bucket & spicy dip, 2 piece Hot Wings and Pepsi",
-      "id": 77,
       "qty": 1
     }
   ]
