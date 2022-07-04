@@ -21,7 +21,8 @@ const dispatch = useDispatch()
     // console.log('inside cart page', cartItems)
 
     const [ind, setInd] = useState(false)
-    const [delt, setDelt]= useState(cartItems.length)
+    const [delt, setDelt] = useState(cartItems.length)
+    const [disable, setDisable] = useState(false)
 
     useEffect(() => {
         // axios.get('http://localhost:8080/cart').then((res) => {
@@ -36,7 +37,11 @@ const dispatch = useDispatch()
         axios.patch(`http://localhost:8080/cart/${e.id}`, {qty:e.qty+value}).then((res) => {
         setInd(!ind)
             console.log(e.qty)
-    })
+        })
+        
+        if (e.qty ===0) {
+            dispatch(deleteItem(e))
+      }
         
     }
     
@@ -61,7 +66,7 @@ const dispatch = useDispatch()
                             dispatch(deleteItem(e))
                     }}>remove</h6>
                     </div>
-                    <button onClick={()=>{qtyHandller(e, -1)}}  className="cartBtn">-</button>
+                    <button  onClick={()=>{qtyHandller(e, -1)}}  className="cartBtn">-</button>
                     <h6>{ e.qty}</h6>
                     <button onClick={()=>{qtyHandller(e, +1)}} className="cartBtn">+ </button>
                     <h6>{`₹ ${(e.price*e.qty).toFixed(2)}` }</h6>
@@ -85,7 +90,7 @@ const dispatch = useDispatch()
             <Button>SUBMIT</Button>
             <br />
 
-            <div className="checkOutInfo">
+            {ttl != 0?<div className="checkOutInfo">
                 <span className="checkout_left">SubTotal-</span>
                 <span className="checkout_right">{"₹"+ttl.toFixed(2)}</span>
                 <br />
@@ -95,9 +100,9 @@ const dispatch = useDispatch()
                 <span className="checkout_left">Grand Total- </span>
                 <span className="checkout_right">₹{(ttl + 70).toFixed(2)}</span>
                
-            </div>
+            </div>:null}
             <br />
-            <Button onClick={()=>{handleNavigate()}}>CheckOut</Button>
+            {ttl != 0?<Button onClick={()=>{handleNavigate()}}>CheckOut</Button>: null}
         
             </div>
 
