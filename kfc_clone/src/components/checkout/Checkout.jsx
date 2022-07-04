@@ -14,7 +14,7 @@ export const Checkout = () => {
   const [long, setLong] = useState(null)
   const [adress, setAdress] = useState(null)
   const [show, setShow] = useState(false)
-  const [form, setForm] = useState({})
+  const [form, setForm] = useState([])
   const navigate = useNavigate()
   const [modal, setModal] = useState(false)
   
@@ -64,7 +64,7 @@ export const Checkout = () => {
       {show ? <div> <h5>{adress.display_name}</h5>
         <br />
       
-      <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
+      <InputGroup name="name" size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
                 placeholder="Enter your name"
               aria-label="Small"
@@ -72,7 +72,7 @@ export const Checkout = () => {
             />
             </InputGroup>
             
-            <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
+            <InputGroup name='mobile' size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
               placeholder="Enter your mobile number"
               aria-label="Small"
@@ -81,13 +81,13 @@ export const Checkout = () => {
             </InputGroup>
             
            
-            <Form.Control type="email" placeholder="Enter email" onChange={(e)=>formData(e)}/>
+            <Form.Control name='email' type="email" placeholder="Enter email" onChange={(e)=>formData(e)}/>
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
       </div> : <Form action="">
         
-        <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
+        <InputGroup name='name' size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
                 placeholder="Enter your name"
               aria-label="Small"
@@ -95,7 +95,7 @@ export const Checkout = () => {
             />
             </InputGroup>
             
-            <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
+            <InputGroup name='mobile' size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
               placeholder="Enter your mobile number"
               aria-label="Small"
@@ -109,12 +109,12 @@ export const Checkout = () => {
               We'll never share your email with anyone else.
             </Form.Text>
     
-            <Form.Control  placeholder="Adress line 1" onChange={(e)=>formData(e)} />
+            <Form.Control name='adress_1'  placeholder="Adress line 1" onChange={(e)=>formData(e)} />
             <Form.Text className="text-muted">
              
             </Form.Text>
     
-            <Form.Control  placeholder="Adress line 2"  onChange={(e)=>formData(e)}/>
+            <Form.Control name='adress_2'  placeholder="Adress line 2"  onChange={(e)=>formData(e)}/>
             <Form.Text className="text-muted">
            
             </Form.Text>
@@ -125,14 +125,17 @@ export const Checkout = () => {
       
       <Button onClick={() => {
         var flag = 1
-        for (key in form) {
-          if (key === undefined) {
-            return flag = 2
-          }
-        }
+        // for (key in form) {
+        //   if (key === undefined) {
+        //     return flag = 2
+        //   }
+        // }
+        // if (form.name == undefined || form.mobile == undefined || form.email == undefined || form.adress_1 == undefined || form.adress_2 == undefined) {
+        //    setModal(true)
+        //   }else{
+        //   navigate('/payment')  }
 
-        {
-          flag !== 1 ? navigate('/payment') : setModal(true) }
+        console.log('form', form)
         
       }}>SUBMIT</Button>
 

@@ -6,6 +6,7 @@ import './index.css'
 import { store } from './redux/store'
 import { Provider } from "react-redux"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'antd/dist/antd.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
