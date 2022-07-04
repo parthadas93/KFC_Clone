@@ -13,6 +13,7 @@ export const Checkout = () => {
   const [long, setLong] = useState(null)
   const [adress, setAdress] = useState(null)
   const [show, setShow] = useState(false)
+  const [form, setForm] = useState({})
   const navigate= useNavigate()
   
   const getAdress = async (lat, long) => {
@@ -43,7 +44,9 @@ export const Checkout = () => {
     getAdress()
   },[adress])
 
-
+  const formData = () => {
+  
+}
 
   return <div className="checkout_main">
     <div className="checkoutAdressDiv">
@@ -98,7 +101,10 @@ export const Checkout = () => {
             </InputGroup>
             
            
-            <Form.Control type="email" placeholder="Enter email" />
+          <Form.Control name="email" type="email" placeholder="Enter email" onChange={(e) => {
+            setForm({ ...form, [e.target.name]: e.target.value })
+            console.log(form)
+            }} />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>

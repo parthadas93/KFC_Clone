@@ -39,7 +39,7 @@ const dispatch = useDispatch()
             console.log(e.qty)
         })
         
-        if (e.qty ===0) {
+        if (e.qty <= 0) {
             dispatch(deleteItem(e))
       }
         
@@ -55,8 +55,8 @@ const dispatch = useDispatch()
  
     <div className="cartItem_main">
         
-        <h1>cart page</h1>
-        {cartItems.map((e) => {
+            <h4>{ `Your cart has ${cartItems.length} items`}</h4>
+        {cartItems.length !=0?cartItems.map((e) => {
             return <>
             <div className="cartItem">
                     <img src={e.img} alt="" />
@@ -75,7 +75,7 @@ const dispatch = useDispatch()
             </>
             
            
-        })}
+        }): <img src="./empty.jpg"></img>  }
         </div>
         <div className="checkOut">
             <img src="./coupon2.jpg" alt="" />
