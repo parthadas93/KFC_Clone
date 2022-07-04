@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import axios from "axios";
 import { Button } from "../main_button/Button";
+import {Modal, ModalHeader} from "reactstrap"
 
 export const Checkout = () => {
 
@@ -14,7 +15,8 @@ export const Checkout = () => {
   const [adress, setAdress] = useState(null)
   const [show, setShow] = useState(false)
   const [form, setForm] = useState({})
-  const navigate= useNavigate()
+  const navigate = useNavigate()
+  const [modal, setModal] = useState(false)
   
   const getAdress = async (lat, long) => {
     await axios.get(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${long}&format=json`).then((res) => {
@@ -44,8 +46,9 @@ export const Checkout = () => {
     getAdress()
   },[adress])
 
-  const formData = () => {
-  
+  const formData = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+    console.log(form)
 }
 
   return <div className="checkout_main">
@@ -61,7 +64,7 @@ export const Checkout = () => {
       {show ? <div> <h5>{adress.display_name}</h5>
         <br />
       
-      <InputGroup size="sm" className="mb-3">
+      <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
                 placeholder="Enter your name"
               aria-label="Small"
@@ -69,7 +72,7 @@ export const Checkout = () => {
             />
             </InputGroup>
             
-            <InputGroup size="sm" className="mb-3">
+            <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
               placeholder="Enter your mobile number"
               aria-label="Small"
@@ -78,13 +81,13 @@ export const Checkout = () => {
             </InputGroup>
             
            
-            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Control type="email" placeholder="Enter email" onChange={(e)=>formData(e)}/>
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
       </div> : <Form action="">
         
-        <InputGroup size="sm" className="mb-3">
+        <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
                 placeholder="Enter your name"
               aria-label="Small"
@@ -92,7 +95,7 @@ export const Checkout = () => {
             />
             </InputGroup>
             
-            <InputGroup size="sm" className="mb-3">
+            <InputGroup size="sm" className="mb-3" onChange={(e)=>formData(e)}>
               <Form.Control
               placeholder="Enter your mobile number"
               aria-label="Small"
@@ -101,20 +104,17 @@ export const Checkout = () => {
             </InputGroup>
             
            
-          <Form.Control name="email" type="email" placeholder="Enter email" onChange={(e) => {
-            setForm({ ...form, [e.target.name]: e.target.value })
-            console.log(form)
-            }} />
+      <Form.Control name="email" type="email" placeholder="Enter email" onChange={(e)=>formData(e)} />
             <Form.Text className="text-muted">
               We'll never share your email with anyone else.
             </Form.Text>
     
-            <Form.Control  placeholder="Adress line 1" />
+            <Form.Control  placeholder="Adress line 1" onChange={(e)=>formData(e)} />
             <Form.Text className="text-muted">
              
             </Form.Text>
     
-            <Form.Control  placeholder="Adress line 2" />
+            <Form.Control  placeholder="Adress line 2"  onChange={(e)=>formData(e)}/>
             <Form.Text className="text-muted">
            
             </Form.Text>
@@ -124,13 +124,22 @@ export const Checkout = () => {
       
       
       <Button onClick={() => {
-        navigate('/payment')
+        var flag = 1
+        for (key in form) {
+          if (key === undefined) {
+            return flag = 2
+          }
+        }
+
+        {
+          flag !== 1 ? navigate('/payment') : setModal(true) }
+        
       }}>SUBMIT</Button>
-      
 
-
-    
-
+<Modal size="lg" isOpen={modal} toggle={()=>setModal(!modal)}>
+          <ModalHeader toggle={()=>setModal(!modal)}>Please fill all the flilds</ModalHeader>
+        </Modal>
+      {/* <button onClick={()=>setModal(true)}>jhd</button> */}
 
     </div>
    
@@ -140,3 +149,4 @@ export const Checkout = () => {
   </div>
 };
 
+//
