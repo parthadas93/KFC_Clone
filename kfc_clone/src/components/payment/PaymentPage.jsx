@@ -1,13 +1,15 @@
-
-
-import { Input, DatePicker, Select, Form, Button } from "antd";
+import { Input, DatePicker, Select, Form } from "antd";
+import { Button } from "../main_button/Button";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Modal, ModalHeader } from "reactstrap";
 import "./payment.css";
-
 
 const { Option } = Select;
 export const PaymentPage = () => {
-  const [pay, setPay]= useState(false)
+  const [modal, setModal] = useState(false);
+  const navigate = useNavigate();
+  const [pay, setPay] = useState(false);
   const layout = {
     labelCol: {
       span: 8,
@@ -17,17 +19,26 @@ export const PaymentPage = () => {
     },
   };
   const [form] = Form.useForm();
+  // const retuenFn = () => {
+  //   navigate('/')
+  // }
   const onFinish = (values) => {
-
     setTimeout(() => {
-      
-      setPay(true)
-    },3000)
+      navigate("/");
+    }, 3000);
+    setModal(true);
   };
 
   return (
     <>
-      {pay ? <h4 className="success">Payment Successful</h4>:null }
+      {pay ? (
+        <>
+          {/* <Button id="return" onClick={retuenFn}>Return Home</Button>
+        
+        <h4 className="success">Payment Successful</h4>
+         */}
+        </>
+      ) : null}
       <img src="debit.png" alt="" />
       <div className="paymentMain">
         {/* form */}
@@ -45,21 +56,21 @@ export const PaymentPage = () => {
           </Form.Item>
 
           <Form.Item
-        name="password"
-        rules={[
-          {
-            required: true,
-            message: 'Please input your password!',
-            max:1
-          },
-        ]}
-      >
-        <Input
-          // prefix={<LockOutlined className="site-form-item-icon" />}
-          type="password"
-          placeholder="Card Number"
-        />
-      </Form.Item>
+            name="password"
+            rules={[
+              {
+                required: true,
+                message: "Please input your password!",
+                max: 1,
+              },
+            ]}
+          >
+            <Input
+              // prefix={<LockOutlined className="site-form-item-icon" />}
+              type="password"
+              placeholder="Card Number"
+            />
+          </Form.Item>
           <div className="cvv">
             <span>
               <DatePicker
@@ -73,28 +84,34 @@ export const PaymentPage = () => {
               />
             </span>
             <span>
-            <Form.Item
-        name="price"
-        label="cvv"
-        rules={[
-          {
-            required: true,
-            max:3
-          },
-        ]}
-      >
-        <Input />
-      </Form.Item>
+              <Form.Item
+                name="price"
+                label="cvv"
+                rules={[
+                  {
+                    required: true,
+                    max: 3,
+                  },
+                ]}
+              >
+                <Input />
+              </Form.Item>
             </span>
           </div>
 
           <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Continue Payment
-        </Button>
-      </Form.Item>
+            <Button type="primary" htmlType="submit">
+              Continue Payment
+            </Button>
+          </Form.Item>
         </Form>
       </div>
+
+      <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
+        <ModalHeader toggle={() => setModal(!modal)}>
+          Please fill all the flilds
+        </ModalHeader>
+      </Modal>
     </>
   );
 };
