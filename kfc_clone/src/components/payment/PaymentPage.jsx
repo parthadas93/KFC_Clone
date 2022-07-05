@@ -1,157 +1,100 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Card from 'react-credit-cards';
-import styles from "./styles.css"
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
-import {
-  formatCreditCardNumber,
-  formatCVC,
-  formatExpirationDate,
-  formatFormData,
-} from './utils';
 
 
-import 'react-credit-cards/es/styles-compiled.css';
+import { Input, DatePicker, Select, Form, Button } from "antd";
+import { useState } from "react";
+import "./payment.css";
 
 
-export default class PaymentPage extends React.Component {
-  state = {
-    number: '',
-    name: '',
-    expiry: '',
-    cvc: '',
-    issuer: '',
-    focused: '',
-    formData: null,
+const { Option } = Select;
+export const PaymentPage = () => {
+  const [pay, setPay]= useState(false)
+  const layout = {
+    labelCol: {
+      span: 8,
+    },
+    wrapperCol: {
+      span: 16,
+    },
   };
+  const [form] = Form.useForm();
+  const onFinish = (values) => {
 
-  handleCallback = ({ issuer }, isValid) => {
-    if (isValid) {
-      this.setState({ issuer });
-    }
-  };
-
-  handleInputFocus = ({ target }) => {
-    this.setState({
-      focused: target.name,
-    });
-  };
-
- 
-
-  handleInputChange = ({ target }) => {
-    if (target.name === 'number') {
-      target.value = formatCreditCardNumber(target.value);
-    } else if (target.name === 'expiry') {
-      target.value = formatExpirationDate(target.value);
-    } else if (target.name === 'cvc') {
-      target.value = formatCVC(target.value);
-    }
-
-    this.setState({ [target.name]: target.value });
-  };
-
-  
-
-  handleSubmit = e => {
-      e.preventDefault();
-      console.log("me");
+    setTimeout(() => {
       
-     alert("Payment Successfull")
-     
-
-
-   
-    
+      setPay(true)
+    },3000)
   };
 
+  return (
+    <>
+      {pay ? <h4 className="success">Payment Successful</h4>:null }
+      <img src="debit.png" alt="" />
+      <div className="paymentMain">
+        {/* form */}
+        <Form onFinish={onFinish}>
+          <Form.Item
+            name={["user", "name"]}
+            label="Name"
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
 
-  render() {
-    const { name, number, expiry, cvc, focused, issuer, formData } = this.state;
+          <Form.Item
+        name="password"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your password!',
+            max:1
+          },
+        ]}
+      >
+        <Input
+          // prefix={<LockOutlined className="site-form-item-icon" />}
+          type="password"
+          placeholder="Card Number"
+        />
+      </Form.Item>
+          <div className="cvv">
+            <span>
+              <DatePicker
+                renderExtraFooter={() => "extra footer"}
+                picker="month"
+                rules={[
+                  {
+                    required: true,
+                  },
+                ]}
+              />
+            </span>
+            <span>
+            <Form.Item
+        name="price"
+        label="cvv"
+        rules={[
+          {
+            required: true,
+            max:3
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
+            </span>
+          </div>
 
-    return (
-      
-      <div key="Payment">
-        
-        <div className="App-payment">
-          <Card
-            number={number}
-            name={name}
-            expiry={expiry}
-            cvc={cvc}
-            focused={focused}
-            callback={this.handleCallback}
-          />
-          <form ref={c => (this.form = c)}>
-            <div className="form-group">
-              <input
-                type="tel"
-                name="number"
-                className="form-control"
-                placeholder="Card Number"
-                pattern="[\d| ]{16,22}"
-                required
-                onChange={this.handleInputChange}
-                onFocus={this.handleInputFocus}
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                className="form-control"
-                placeholder="Name"
-                required
-                onChange={this.handleInputChange}
-                onFocus={this.handleInputFocus}
-              />
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <input
-                  type="tel"
-                  name="expiry"
-                  className="form-control"
-                  placeholder="Valid Thru"
-                  pattern="\d\d/\d\d"
-                  required
-                  onChange={this.handleInputChange}
-                  onFocus={this.handleInputFocus}
-                />
-              </div>
-              <div className="col-6">
-                <input
-                  type="tel"
-                  name="cvc"
-                  className="form-control"
-                  placeholder="CVC"
-                  pattern="\d{3,4}"
-                  required
-                  onChange={this.handleInputChange}
-                  onFocus={this.handleInputFocus}
-                />
-              </div>
-            </div>
-            <input type="hidden" name="issuer" value={issuer} />
-            <div className="form-actions">
-              <button onClick={this.handleSubmit} className="btn btn-primary btn-block">PAY</button>
-            </div>
-          </form>
-          {formData && (
-            <div className="App-highlight">
-              {formatFormData(formData).map((d, i) => <div key={i}>{d}</div>)}
-            </div>
-          )}
-         
-          
-          
-        </div>
-        
+          <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+        <Button type="primary" htmlType="submit">
+          Continue Payment
+        </Button>
+      </Form.Item>
+        </Form>
       </div>
-    );
-  }
-}
-
-
+    </>
+  );
+};

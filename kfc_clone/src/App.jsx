@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom'
 import { Menu } from './components/menu/Menu'
 import { Cart } from './components/cart/Cart'
 import {Checkout} from "./components/checkout/Checkout"
-import PaymentPage from './components/payment/PaymentPage'
+import {PaymentPage} from './components/payment/PaymentPage'
 import { Footer } from './components/footer/Footer'
 
 
