@@ -1,7 +1,7 @@
 import { Input, DatePicker, Select, Form } from "antd";
 import { Button } from "../main_button/Button";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import { Modal, ModalHeader } from "reactstrap";
 import "./payment.css";
 
@@ -19,12 +19,14 @@ export const PaymentPage = () => {
     },
   };
   const [form] = Form.useForm();
-  // const retuenFn = () => {
-  //   navigate('/')
-  // }
+  const retuenFn = () => {
+    navigate('/')
+  }
   const onFinish = (values) => {
     setTimeout(() => {
-      navigate("/");
+      // navigate("/");
+      setModal(false);
+      setPay(true)
     }, 3000);
     setModal(true);
   };
@@ -33,35 +35,41 @@ export const PaymentPage = () => {
     <>
       {pay ? (
         <>
-          {/* <Button id="return" onClick={retuenFn}>Return Home</Button>
+          <div className="returnDiv">
+{/* 
+          <Button id="return"  onClick={retuenFn}>Return Home</Button> */}
         
-        <h4 className="success">Payment Successful</h4>
-         */}
+            <h4 className="success">Payment Successful</h4>
+            <Link style={{ textAlign: "left" }} className="link" to={"/"}>Return Home</Link>
+          </div>
+        
         </>
       ) : null}
       <img src="debit.png" alt="" />
+      <br />
+      <br />
       <div className="paymentMain">
         {/* form */}
         <Form onFinish={onFinish}>
           <Form.Item
             name={["user", "name"]}
-            label="Name"
+            // label="Name"
             rules={[
               {
                 required: true,
               },
             ]}
           >
-            <Input />
+            <Input placeholder="Enter your name" />
           </Form.Item>
 
           <Form.Item
-            name="password"
+            name="Card Number"
             rules={[
               {
                 required: true,
-                message: "Please input your password!",
-                max: 1,
+                message: "Please enter correct card number!",
+                max: 16,
               },
             ]}
           >
@@ -86,7 +94,7 @@ export const PaymentPage = () => {
             <span>
               <Form.Item
                 name="price"
-                label="cvv"
+                // label="cvv"
                 rules={[
                   {
                     required: true,
@@ -94,7 +102,7 @@ export const PaymentPage = () => {
                   },
                 ]}
               >
-                <Input />
+                <Input placeholder="CVV" />
               </Form.Item>
             </span>
           </div>
@@ -106,10 +114,11 @@ export const PaymentPage = () => {
           </Form.Item>
         </Form>
       </div>
+     
 
       <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
         <ModalHeader toggle={() => setModal(!modal)}>
-          Please fill all the flilds
+          Please wait
         </ModalHeader>
       </Modal>
     </>

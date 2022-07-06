@@ -139,15 +139,22 @@ export const Checkout = () => {
         <Input />
       </Form.Item>
    
-          <Form.Item name={['user', 'mobile']} label="Mobile"
-          rules={[
-            {
-              type: 'number',
-              max: 10,
-              required: true,
-            },
-          ]}>
-        <Input />
+      <Form.Item
+        name="phone"
+        label="Phone Number"
+        rules={[
+          {
+            required: true,
+            message: 'Please input your phone number!',
+          },
+        ]}
+      >
+        <Input
+          addonBefore={prefixSelector}
+          style={{
+            width: '100%',
+          }}
+        />
       </Form.Item>
           {/* <Form.Item name={['user', 'adress']} label="Adress"
           rules={[
@@ -157,10 +164,16 @@ export const Checkout = () => {
           ]}>
         <Input.TextArea />
       </Form.Item> */}
+          
+          <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
+        <Button type="primary" htmlType="submit">
+          Continue Payment
+        </Button>
+      </Form.Item>
     
     </Form>
       
-      
+ 
       
       
       

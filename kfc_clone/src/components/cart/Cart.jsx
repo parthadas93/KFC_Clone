@@ -75,7 +75,7 @@ const dispatch = useDispatch()
             </>
             
            
-        }): <img src="./empty.jpg"></img>  }
+        }): <img src="./checkout.png"></img>  }
         </div>
         <div className="checkOut">
             <img src="./coupon2.jpg" alt="" />
