@@ -9,6 +9,8 @@ import { Cart } from './components/cart/Cart'
 import {Checkout} from "./components/checkout/Checkout"
 import {PaymentPage} from './components/payment/PaymentPage'
 import { Footer } from './components/footer/Footer'
+import { Signup } from './components/signup/Signup'
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
         <Route path="/cart" element={<Cart></Cart>}></Route>
         <Route path="/checkout" element={<Checkout></Checkout>}></Route>
         <Route path="/payment" element={<PaymentPage></PaymentPage>} ></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
       </Routes>
       <Footer></Footer>
      
