@@ -3,14 +3,14 @@ const productSchema = new mongoose.Schema({
     title: { type: String, require: true },
     type: { type: String, require: true },
     price: { type: Number, require: true },
-    des: { type: Number, require: true },
-    img: { type: Number, require: true }
+    des: { type: String, require: true },
+    img: { type: String, require: true }
 },
     {timestamps: true}
 
 )
 
-export const productModel = mongoose.model('product', productSchema)
+module.exports  = mongoose.model('product', productSchema)
 
 
 
