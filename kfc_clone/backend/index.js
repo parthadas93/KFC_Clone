@@ -5,12 +5,14 @@ const connect = require("./config/db")
 const allItemController = require('./controller/allItemController')
 const chickenRollsController = require('./controller/chickenRollsController')
 const popCornController = require('./controller/popCornController')
-const hotDealsController = require ('./controller/hotDealsController')
+const hotDealsController = require('./controller/hotDealsController')
+const chickenBucketController = require ('./controller/chickenBucketController')
 
 app.use('/allItem', allItemController)
 app.use('/chicken_rolls', chickenRollsController)
 app.use('/popCorn', popCornController)
 app.use('/hotDeal', hotDealsController)
+app.use('/chicken_bucket',chickenBucketController )
 
 app.listen(8787, async () => {
     try {
