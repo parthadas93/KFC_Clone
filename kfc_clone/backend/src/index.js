@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 app.use(express.json())
+require("dotenv").config()
 const connect = require("./config/db")
 const allItemController = require('./controller/allItemController')
 const chickenRollsController = require('./controller/chickenRollsController')

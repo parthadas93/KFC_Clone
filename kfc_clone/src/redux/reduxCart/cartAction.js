@@ -33,21 +33,21 @@ export const deleteItemAction = (data) => {
 
 
 export const postCart = (data) => (dispatch) => {
-    axios.post("http://localhost:8080/cart", data).then((res) => {
+    axios.post("https://kfcclone.herokuapp.com/cart", data).then((res) => {
        dispatch(postCartAction(data))
         // console.log('added to cart',res.data)
    })
 }
 
 export const getCart =()=> (dispatch) => {
-    axios.get('http://localhost:8080/cart').then((res) => {
+    axios.get('https://kfcclone.herokuapp.com/cart').then((res) => {
         dispatch(cartAction(res.data))
         // console.log("after getTotal",store.getState())
   })
 }
 
 export const getTotal = () => (dispatch) => {
-    axios.get('http://localhost:8080/cart').then((res) => {
+    axios.get('https://kfcclone.herokuapp.com/cart').then((res) => {
         let sum = res.data.reduce((a, b) => {
            return (a + b.price)
         }, 0)
