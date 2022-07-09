@@ -8,7 +8,8 @@ const popCornController = require('./controller/popCornController')
 const hotDealsController = require('./controller/hotDealsController')
 const chickenBucketController = require('./controller/chickenBucketController')
 const boxMealController = require('./controller/boxMealController')
-const burgerController = require ('./controller/burgerController')
+const burgerController = require('./controller/burgerController')
+const biriyaniController = require('./controller/biriyaniController')
 
 app.use('/allItem', allItemController)
 app.use('/chicken_rolls', chickenRollsController)
@@ -17,6 +18,7 @@ app.use('/hotDeal', hotDealsController)
 app.use('/chicken_bucket', chickenBucketController)
 app.use('/boxMeal', boxMealController)
 app.use('/burger', burgerController)
+app.use('/biriyani', biriyaniController)
 
 app.listen(8787, async () => {
     try {
