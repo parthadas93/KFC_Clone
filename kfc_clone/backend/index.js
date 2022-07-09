@@ -2,9 +2,11 @@ const express = require('express')
 const app = express()
 app.use(express.json())
 const connect = require("./config/db")
-const productController = require('./controller/productController')
+const allItemController = require('./controller/allItemController')
+const chickenRollsController = require ('./controller/chickenRollsController')
 
-app.use('/kfcItems', productController)
+app.use('/allItem', allItemController)
+app.use('/chicken_rolls', chickenRollsController)
 
 app.listen(8787, async () => {
     try {
