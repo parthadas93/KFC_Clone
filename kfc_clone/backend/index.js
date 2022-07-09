@@ -13,7 +13,7 @@ const biriyaniController = require('./controller/biriyaniController')
 const snacksController = require('./controller/snacksController')
 const drinksController = require('./controller/drinksController')
 const cartController = require ('./controller/cartController')
-
+const port = process.env.PORT || 8787
 app.use('/allItem', allItemController)
 app.use('/chicken_rolls', chickenRollsController)
 app.use('/popCorn', popCornController)
@@ -26,7 +26,7 @@ app.use('/snacks', snacksController)
 app.use('/drinks', drinksController)
 app.use ('/cart', cartController)
 
-app.listen(8787, async () => {
+app.listen(port, async () => {
     try {
          connect()
         console.log('connected')
