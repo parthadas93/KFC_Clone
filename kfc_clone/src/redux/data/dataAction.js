@@ -15,7 +15,7 @@ export const dataAction = (data) => {
 }
 
 export const getAllData = () => (dispatch) => {
-    axios.get("https://kfcclone.herokuapp.com/").then((res) => {
+    axios.get("https://kfcclone.herokuapp.com/allItem").then((res) => {
       dispatch(dataAction(res.data))
       
     });

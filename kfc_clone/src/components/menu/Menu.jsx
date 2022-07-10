@@ -4,8 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { getAllData } from "../../redux/data/dataAction";
 import {
-  categoryAction,
-  getCategory,
+  getCategory
 } from "../../redux/singleCategory/categoryAction";
 import { useDispatch, useSelector } from "react-redux";
 import { v4 as uuidv4 } from 'uuid';
@@ -51,14 +50,14 @@ export const Menu = () => {
             </li>
             <li key={uuidv4()}
               onClick={() => {
-                dispatch(getCategory("hotDeals"));
+                dispatch(getCategory("hotDeal"));
               }}
             >
               HOT DEALS
             </li>
             <li key={uuidv4()}
               onClick={() => {
-                dispatch(getCategory("chickenBuckets"));
+                dispatch(getCategory("chicken_bucket"));
               }}
             >
               CHICKEN BUCKETS
@@ -72,7 +71,7 @@ export const Menu = () => {
             </li>
             <li key={uuidv4()}
               onClick={() => {
-                dispatch(getCategory("burgers"));
+                dispatch(getCategory("burger"));
               }}
             >
               BURGERS
