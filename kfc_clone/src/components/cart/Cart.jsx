@@ -34,7 +34,7 @@ const dispatch = useDispatch()
     }, [ind,cartItem])
     // 
     const qtyHandller = (e, value) => {
-        axios.patch(`http://localhost:8080/cart/${e.id}`, {qty:e.qty+value}).then((res) => {
+        axios.patch(`https://kfcclone.herokuapp.com/cart/${e.id}`, {qty:e.qty+value}).then((res) => {
         setInd(!ind)
             console.log(e.qty)
         })
