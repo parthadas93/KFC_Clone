@@ -107,7 +107,7 @@ export const Checkout = () => {
       <h4>Set you delivery details</h4>
       <span className="location" onClick={() => { setShow(true) }}>Use My Current Location <i class="fa-solid fa-location-dot"></i></span>
       <br />
-      <span onClick={()=>{setShow(false)}}>Enter manually</span>
+      <span className="location" onClick={()=>{setShow(false)}}>Enter manually</span>
       <br />
       <br />
 

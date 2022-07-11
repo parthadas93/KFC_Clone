@@ -41,7 +41,7 @@ export const qtyIncAction = (price) => {
 
 
 export const postCart = (data) => (dispatch) => {
-    axios.post("http://localhost:8787/cart", data).then((res) => {
+    axios.post("https://kfcclone.herokuapp.com/cart", data).then((res) => {
        dispatch(postCartAction(data))
         // console.log('added to cart',res.data)
    })
@@ -49,14 +49,14 @@ console.log('added to cart',data)
 }
 
 export const getCart =()=> (dispatch) => {
-    axios.get('http://localhost:8787/cart').then((res) => {
+    axios.get('https://kfcclone.herokuapp.com/cart').then((res) => {
         dispatch(cartAction(res.data))
         // console.log("after getTotal",store.getState())
   })
 }
 
 export const getTotal = () => (dispatch) => {
-    axios.get('http://localhost:8787/cart').then((res) => {
+    axios.get('https://kfcclone.herokuapp.com/cart').then((res) => {
         let sum = res.data.reduce((a, b) => {
            return (a +( b.price*b.qty))
         }, 0)
@@ -66,14 +66,14 @@ export const getTotal = () => (dispatch) => {
 }
 
 export const qtyIncreser = (e,value) => (dispatch) => {
-    axios.patch(`http://localhost:8787/cart/${e._id}`, { qty: e.qty + value }).then((res) => {
+    axios.patch(`https://kfcclone.herokuapp.com/cart/${e._id}`, { qty: e.qty + value }).then((res) => {
         dispatch(qtyIncAction(res.data.price))
     })
 }
 
 
 export const deleteItem = (e) =>(dispatch)=> {
-    axios.delete(`http://localhost:8787/cart/${e._id}`).then((res) => {
+    axios.delete(`https://kfcclone.herokuapp.com/cart/${e._id}`).then((res) => {
         dispatch(deleteItemAction(res.data))
         // console.log(res.data)
     }).catch((err) => {
