@@ -27,11 +27,20 @@ router.get('', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         const deleteItem = await Cart.findByIdAndDelete(req.params.id)
-        return res.status(500).send(deleteItem)
+        return res.status(500).send(Cart)
     } catch (err) {
         return res.status(500).send(err.message)
     }
 })
 
+router.patch('/:id', async (req, res) => {
+    try {
+        const updatedItem = await Cart.findByIdAndUpdate(req.params.id, req.body, { new: true })
+        return res.status(201).send(updatedItem)
+    }
+    catch (err) {
+        return res.status(500).send(err.message)
+    }
+})
 
 module.exports=router

@@ -59,7 +59,7 @@ export const getTotal = () => (dispatch) => {
 
 
 export const deleteItem = (e) =>(dispatch)=> {
-    axios.delete(`https://kfcclone.herokuapp.com/cart/${e.id}`).then((res) => {
+    axios.delete(`https://kfcclone.herokuapp.com/cart/${e._id}`).then((res) => {
         dispatch(deleteItemAction(e))
     })
     
