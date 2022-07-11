@@ -60,6 +60,7 @@ ___
 ![Untitled](https://user-images.githubusercontent.com/93373154/178320394-b895626c-29ae-40b7-b1a7-9c648b03fd3e.png)
 <br/>
 <br/>
+![responsive](https://user-images.githubusercontent.com/93373154/178321065-fcef1942-4f3a-4080-b1d1-3e072b2ce5cc.png)
   
  ### Contributing
  ___
