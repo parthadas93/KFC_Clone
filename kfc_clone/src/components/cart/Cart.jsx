@@ -39,7 +39,7 @@ const dispatch = useDispatch()
     // 
     const qtyHandller = (e, value) => {
         if (value == -1 && e.qty === 1) {
-            setDisable(!disable)
+            setDisable(true)
         } else {
             
             // axios.patch(`http://localhost:8787/cart/${e._id}`, {qty:e.qty+value}).then((res) => {
@@ -47,7 +47,7 @@ const dispatch = useDispatch()
             //     console.log("akhon qty", e.qty)
             //     qtyIncAction(res.data.price)
             // })
-
+            setDisable(false)
                 dispatch(qtyIncreser(e,value))
         }
        
