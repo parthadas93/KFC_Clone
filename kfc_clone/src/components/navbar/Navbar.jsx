@@ -10,9 +10,11 @@ export const Navbar = () => {
   const cartItem = useSelector((store) => store.cart.cart)
   const ttl = useSelector((store) => store.cart.total)
   const newItem = useSelector((store) => store.cart.newItem)
-  const changeIndelete= useSelector((store)=>store.cart.deletedItem)
+  const changeIndelete = useSelector((store) => store.cart.deletedItem)
+  const newQty = useSelector((store)=>store.cart.qtyIncrese)
+
   
-  // console.log('ttl', ttl)
+
   
   const dispatch = useDispatch()
 
@@ -23,9 +25,9 @@ export const Navbar = () => {
    dispatch( getTotal())
     // console.log("cartItems", cartItem)
 
+    console.log('new total', ttl)
 
-
-  },[newItem,changeIndelete])
+  },[newItem,changeIndelete,newQty])
   // , cartItem
 
 

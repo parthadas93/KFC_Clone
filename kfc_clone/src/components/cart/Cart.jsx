@@ -7,6 +7,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
 import { Button } from "../main_button/Button"
 import { useNavigate } from "react-router-dom"
+import { qtyIncreser } from "../../redux/reduxCart/cartAction"
 
 
 
@@ -41,10 +42,13 @@ const dispatch = useDispatch()
             setDisable(!disable)
         } else {
             
-            axios.patch(`http://localhost:8787/cart/${e._id}`, {qty:e.qty+value}).then((res) => {
-            setInd(!ind)
-                console.log("akhon qty",e.qty)
-            })
+            // axios.patch(`http://localhost:8787/cart/${e._id}`, {qty:e.qty+value}).then((res) => {
+            // setInd(!ind)
+            //     console.log("akhon qty", e.qty)
+            //     qtyIncAction(res.data.price)
+            // })
+
+                dispatch(qtyIncreser(e,value))
         }
        
         

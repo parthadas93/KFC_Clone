@@ -2,7 +2,8 @@ import axios from "axios"
 export const CART = 'CART'
 export const POST = 'POST'
 export const TOTAL = 'TOTAL'
-export const DELETE='DELETE'
+export const DELETE = 'DELETE'
+export const QTYINC= "QTYINC"
 
 export const totalAction = (data) => {
     return {
@@ -31,6 +32,13 @@ export const deleteItemAction = (data) => {
     }
 }
 
+export const qtyIncAction = (price) => {
+    return {
+        type: QTYINC,
+        payload: price
+    }
+}
+
 
 export const postCart = (data) => (dispatch) => {
     axios.post("http://localhost:8787/cart", data).then((res) => {
@@ -50,13 +58,18 @@ export const getCart =()=> (dispatch) => {
 export const getTotal = () => (dispatch) => {
     axios.get('http://localhost:8787/cart').then((res) => {
         let sum = res.data.reduce((a, b) => {
-           return (a + b.price)
+           return (a +( b.price*b.qty))
         }, 0)
         dispatch(totalAction(sum))
        
     })
 }
 
+export const qtyIncreser = (e,value) => (dispatch) => {
+    axios.patch(`http://localhost:8787/cart/${e._id}`, { qty: e.qty + value }).then((res) => {
+        dispatch(qtyIncAction(res.data.price))
+    })
+}
 
 
 export const deleteItem = (e) =>(dispatch)=> {
