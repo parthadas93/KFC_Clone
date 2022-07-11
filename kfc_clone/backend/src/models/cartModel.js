@@ -5,7 +5,7 @@ const cartSchema = new mongoose.Schema({
     price: { type: Number, require: true },
     des: { type: String, require: true },
     img: { type: String, require: true },
-    qty:{type: String, require: true}
+    qty:{type: Number, require: true}
 },
     {timestamps: true}
 
