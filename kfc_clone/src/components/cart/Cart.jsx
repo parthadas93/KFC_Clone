@@ -23,6 +23,7 @@ const dispatch = useDispatch()
     const [ind, setInd] = useState(false)
     const [delt, setDelt] = useState(cartItems.length)
     const [disable, setDisable] = useState(false)
+    
 
     useEffect(() => {
         // axios.get('http://localhost:8080/cart').then((res) => {
@@ -31,17 +32,28 @@ const dispatch = useDispatch()
     //   })
         
         dispatch(getCart())
+
+        console.log("deleted new item",cartItem)
     }, [ind,cartItem])
     // 
     const qtyHandller = (e, value) => {
-        axios.patch(`https://kfcclone.herokuapp.com/cart/${e.id}`, {qty:e.qty+value}).then((res) => {
-        setInd(!ind)
-            console.log(e.qty)
-        })
+        if (value == -1 && e.qty === 1) {
+            setDisable(!disable)
+        } else {
+            
+            axios.patch(`http://localhost:8787/cart/${e._id}`, {qty:e.qty+value}).then((res) => {
+            setInd(!ind)
+                console.log("akhon qty",e.qty)
+            })
+        }
+       
         
-        if (e.qty <= 0) {
-            dispatch(deleteItem(e))
-      }
+    //     if (e.qty <= 0) {
+    //         dispatch(deleteItem(e))
+    //   }
+        //  if (e.qty <= 1) {
+        //     setDisable(true)
+        // }
         
     }
     
@@ -62,11 +74,11 @@ const dispatch = useDispatch()
                     <img src={e.img} alt="" />
                     <div>
                     <h6 className="ttl">{e.title}</h6> 
-                        <h6 onClick={() => {
+                        <h6 className="remove" onClick={() => {
                             dispatch(deleteItem(e))
                     }}>remove</h6>
                     </div>
-                    <button  onClick={()=>{qtyHandller(e, -1)}}  className="cartBtn">-</button>
+                    <button disabled={disable}  onClick={()=>{qtyHandller(e, -1)}}  className="cartBtn">-</button>
                     <h6>{ e.qty}</h6>
                     <button onClick={()=>{qtyHandller(e, +1)}} className="cartBtn">+ </button>
                     <h6>{`₹ ${(e.price*e.qty).toFixed(2)}` }</h6>
