@@ -37,6 +37,7 @@ export const postCart = (data) => (dispatch) => {
        dispatch(postCartAction(data))
         // console.log('added to cart',res.data)
    })
+console.log('added to cart',data)
 }
 
 export const getCart =()=> (dispatch) => {

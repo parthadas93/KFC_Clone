@@ -27,7 +27,7 @@ router.get('', async (req, res) => {
 router.delete('/:id', async (req, res) => {
     try {
         const deleteItem = await Cart.findByIdAndDelete(req.params.id)
-        return res.status(500).send(Cart)
+        return res.status(500).send(deleteItem)
     } catch (err) {
         return res.status(500).send(err.message)
     }
