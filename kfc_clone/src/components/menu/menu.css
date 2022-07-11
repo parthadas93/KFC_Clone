@@ -39,7 +39,7 @@ li{
 .menu_item{
     display: grid;
     width: 100%;
-    height: 500px;
+    height: 600px;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: scroll;
