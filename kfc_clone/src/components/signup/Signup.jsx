@@ -4,19 +4,22 @@ import './signup.css'
 import { isAuthAction } from "../../redux/isAuth/SigninAction"
 import { useDispatch, useSelector } from "react-redux"
 import { useState } from "react"
+import { Modal, ModalHeader } from "reactstrap";
 
 export const Signup = () => {
     const auth = useSelector((store) => store.isAuth.isAuth)
     const [number,setNumber]= useState('')
-    
+    const [modal, setModal] = useState(false);
     const dispatch = useDispatch()
     const navigate = useNavigate()
 
     const signupFN = () => {
-        if (number !== "" && number.length !== 10) {
+        if (number.length == 10) {
             dispatch(isAuthAction(true))
             
             navigate('/')
+        } else {
+            setModal(true)
         }
         
     }
@@ -32,7 +35,7 @@ export const Signup = () => {
 
             <input onChange={(e) => {
                 setNumber(e.target.value)
-            }} className="mobileInput" type="text" placeholder="Phone Number*" />
+            }} className="mobileInput" type="number" placeholder="Phone Number*" />
             <br />
             <br />
             <h6>By “logging in to KFC”, you agree to our Privacy Policy and Terms & Conditions.</h6>
@@ -46,7 +49,11 @@ export const Signup = () => {
             <Button>Skip, continue as guest</Button>
 
     </div>
-    
+    <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
+        <ModalHeader toggle={() => setModal(!modal)}>
+          Phone Number must be 10 digits
+        </ModalHeader>
+      </Modal>
     
     
     </>
