@@ -172,12 +172,7 @@ export const Checkout = () => {
       </Form.Item>
     
     </Form>
-      
- 
-      
-      
-      
-      
+    
       </div> : 
       
       <Form {...layout} name="nest-messages" onFinish={onFinish} validateMessages={validateMessages}>
