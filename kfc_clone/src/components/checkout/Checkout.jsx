@@ -94,7 +94,7 @@ export const Checkout = () => {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyURL = "http://localhost:8787/verify";
+          const verifyURL = "https://kfcclone.herokuapp.com/verify";
           const { data } = await axios.post(verifyURL, response);
           console.log("success_data:", data);
         } catch (err) {
@@ -110,7 +110,7 @@ export const Checkout = () => {
   };
   const handlePayment = async () => {
     try {
-      const orderURL = "http://localhost:8787/orders";
+      const orderURL = "https://kfcclone.herokuapp.com/orders";
       const { data } = await axios.post(orderURL, { amount: ttyl });
       console.log("data2:", data);
       initPayment(data.data);
