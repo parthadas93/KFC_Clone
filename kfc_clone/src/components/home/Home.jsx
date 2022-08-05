@@ -3,14 +3,18 @@ import { Button } from "../main_button/Button";
 import { Carousels } from "../Carousels/Carousels";
 import { useSelector } from "react-redux";
 import { SmallCards } from "../smallCards/SmallCards";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate= useNavigate()
   const user = useSelector((store) => store.isAuth.isAuth);
   return (
     <>
       <div className="black">
         <b>LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN</b>
-        <Button>Start Order</Button>
+        <Button onClick={() => {
+          navigate('/menu')
+        }}>Start Order</Button>
       </div>
 
       <div className="userDiv">
