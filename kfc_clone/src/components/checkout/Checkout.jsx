@@ -3,11 +3,12 @@ import "./checkout.css";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { Modal, ModalHeader } from "reactstrap";
 // import Form from 'react-bootstrap/Form';
 // import InputGroup from 'react-bootstrap/InputGroup';
 import axios from "axios";
 import { Button } from "../main_button/Button";
-import { Modal, ModalHeader } from "reactstrap";
+
 import { Select } from "antd";
 
 //anted forms
@@ -60,6 +61,7 @@ export const Checkout = () => {
   const navigate = useNavigate();
   const [modal, setModal] = useState(false);
   const ttyl = useSelector((store) => store.cart.total);
+  const [success, setSuccess]= useState('')
 
   const getAdress = async (lat, long) => {
     await axios
@@ -96,7 +98,9 @@ export const Checkout = () => {
         try {
           const verifyURL = "https://kfcclone.herokuapp.com/verify";
           const { data } = await axios.post(verifyURL, response);
-          console.log("success_data:", data);
+          // console.log("success_data:", data);
+          setSuccess(data.message)
+         
         } catch (err) {
           console.log("err:", err);
         }
@@ -133,7 +137,14 @@ export const Checkout = () => {
     // console.log(values);
     // navigate('/payment')
     handlePayment();
+    // alert('yesss')
+    // if (success.length !== "") {
+    //   // setModal(true)
+    //   // console.log(success)
+      
+    // }
   };
+  
 
   return (
     <div className="checkout_main">
@@ -300,11 +311,11 @@ export const Checkout = () => {
         
       }}>Continue to Payment</Button> */}
 
-        <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
+        {/* <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
           <ModalHeader toggle={() => setModal(!modal)}>
             Please fill all the flilds
           </ModalHeader>
-        </Modal>
+        </Modal> */}
         {/* <button onClick={()=>setModal(true)}>jhd</button> */}
       </div>
 
@@ -315,6 +326,11 @@ export const Checkout = () => {
           alt=""
         />
       </div>
+      <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
+        <ModalHeader toggle={() => setModal(!modal)}>
+          Please wait
+        </ModalHeader>
+      </Modal>
     </div>
   );
 };
