@@ -137,12 +137,7 @@ export const Checkout = () => {
     // console.log(values);
     // navigate('/payment')
     handlePayment();
-    // alert('yesss')
-    // if (success.length !== "") {
-    //   // setModal(true)
-    //   // console.log(success)
-      
-    // }
+    
   };
   
 
@@ -328,7 +323,7 @@ export const Checkout = () => {
       </div>
       <Modal size="lg" isOpen={modal} toggle={() => setModal(!modal)}>
         <ModalHeader toggle={() => setModal(!modal)}>
-          Please wait
+         Payment Successful
         </ModalHeader>
       </Modal>
     </div>
